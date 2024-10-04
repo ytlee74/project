@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC','Noto Serif TC','Roboto'; /* 使用 Google Fonts 引入的字體 */
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: #e7e7e7;
+    z-index: 999;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%;
+    max-width: 1080px;
+    align-items: center;
+    margin: auto;
+}
+nav{
+    width: 600px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul li{
+    font-size: 16px;
+}
