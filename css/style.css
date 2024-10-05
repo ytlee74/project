@@ -22,6 +22,7 @@ header{
     max-width: 1080px;
     align-items: center;
     margin: auto;
+    padding: 0 30px;
 }
 nav{
     width: 600px;
@@ -42,4 +43,17 @@ section{
 hr{
     width: 80%;
     border: 1px solid #000;
+}
+
+.flex-start{
+    display: flex;
+}
+.breadcrumbList{
+    margin-top: 50px;
+}
+.breadcrumb{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    gap: 10px;
 }
