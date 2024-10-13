@@ -7,11 +7,26 @@ body{
     padding: 0;
     font-family: 'Noto Sans TC','Noto Serif TC','Roboto'; /* 使用 Google Fonts 引入的字體 */
 }
+
+h1,h2,h3{
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-weight: 700;
+}
+p{
+    font-family: "Noto Sans TC";
+    font-style: normal; 
+    font-weight: 500;
+}
+
 header{
     position: sticky;
     top: 0;
     background-color: #e7e7e7;
     z-index: 999;
+}
+section{
+    margin-top: 50px;
 }
 .flex{
     display: flex;
@@ -36,13 +51,48 @@ nav ul li{
     font-size: 16px;
 }
 
-section{
-    margin-top: 50px;
+.main{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.content{
+    width: 600px;
+    position: relative;
+    top: 50px;
+    left: 89px;
+}
+
+.content>h1{
+    font-size: 64px;
+}
+
+.content>p{
+    width: 450px;
 }
 
 hr{
     width: 80%;
     border: 1px solid #000;
+}
+
+.foreword>h2{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Noto Serif TC';
 }
 
 .flex-start{
@@ -57,3 +107,17 @@ hr{
     margin: auto;
     gap: 10px;
 }
+
+.page-banner{
+    width: 100%;
+    height: 260px;
+    background-color: #CCC;
+    margin: auto;
+}
+
+h1.page-title{
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+}
+
