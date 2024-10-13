@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-body{
+body, h1, h2, h3, p{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans TC','Noto Serif TC','Roboto'; /* 使用 Google Fonts 引入的字體 */
 }
 
-h1,h2,h3{
+h1, h2, h3{
     font-family: "Noto Sans TC";
     font-style: normal;
     font-weight: 700;
@@ -76,11 +76,11 @@ nav ul li{
     left: 89px;
 }
 
-.content>h1{
+.content > h1{
     font-size: 64px;
 }
 
-.content>p{
+.content > p{
     width: 450px;
 }
 
@@ -89,8 +89,9 @@ hr{
     border: 1px solid #000;
 }
 
-.foreword>h2{
+.foreword > h2{
     text-align: center;
+    line-height: 64px;
     font-size: 36px;
     font-family: 'Noto Serif TC';
 }
