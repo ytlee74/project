@@ -78,10 +78,13 @@ nav ul li{
 
 .content > h1{
     font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 30px;
 }
 
 .content > p{
     width: 450px;
+    font-size: 24px;
 }
 
 hr{
