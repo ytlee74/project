@@ -11,11 +11,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <style>
+        .about-content{
+            width: 100%
+        }
+        .about-main{
+            width: 1080px;
+            margin: auto;
+        }
+        .about-img{
+            width: 550px;
+            height: 550px;
+            background-color: antiquewhite;
+        }
+        .about-item{
+            width: 480px;
+            flex-wrap: wrap;
+        }
+        .about-item-text{
+            width: 180px;
+        }
+        .about-number{
+            font-size: 48px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="menu flex">
-            <div class="logo"><img src="/img/logo_mb.png" alt=""></div>
+            <div class="logo"><img src="./img/logo_mb.png" alt=""></div>
                 <nav>
                     <ul class="flex">
                         <li>關於我們</li>
@@ -42,19 +68,43 @@
         </div>
     </div>
 
-    <section>
-
+    <section class="about-content">
+        <div class="about-main">
+            <div class="about-title">
+                <h2>關於【健康參盒】</h2>
+                <p>為每個人找到專屬陪練的教練：「堅信有溫暖的陪伴，才有更好、更健康的體態。」</p>
+            </div>
+            <div class="about-item flex">
+                <div class="about-item-text">
+                    <p>since</p>
+                    <p class="about-number">2023</p>
+                </div>
+                <div class="about-item-text">
+                    <p>store</p>
+                    <p class="about-number">2</p>
+                </div>
+                <div class="about-item-text">
+                    <p>coach</p>
+                    <p class="about-number">20+</p>
+                </div>
+                <div class="about-item-text">
+                    <p>member</p>
+                    <p class="about-number">100+</p>
+                </div>
+            </div>
+            <div class="about-img">圖片</div>
+        </div>
     </section>
 
     <footer>
         <div class="footer-info">
             <div class="brand flex">
-                <div class="logo-footer"><img src="/img/logo_mb.png" alt=""></div>
+                <div class="logo-footer"><img src="./img/logo_mb.png" alt=""></div>
                 <div class="social-icon flex">
-                    <img src="img/icon-fb.png" alt="">
-                    <img src="img/icon-ig.png" alt="">
-                    <img src="img/icon-YT.png" alt="">
-                    <img src="img/icon-LINE.png" alt="">
+                    <img src="./img/icon-fb.png" alt="">
+                    <img src="./img/icon-ig.png" alt="">
+                    <img src="./img/icon-YT.png" alt="">
+                    <img src="./img/icon-LINE.png" alt="">
                 </div>
             </div>
             <div class="store-1">
