@@ -21,21 +21,50 @@
             width: 1080px;
             margin: auto;
         }
+        .about-title{
+            width: 480px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+        .about-title > h2{
+            font-size: 48px;
+        }
+
         .about-img{
             width: 550px;
             height: 550px;
             background-color: antiquewhite;
         }
         .about-item{
-            width: 480px;
-            flex-wrap: wrap;
+            display: flex;
+            width: 445px;
+            flex-direction: column;
+            align-items: center;
+            gap: 36px;
+            flex-shrink: 0;
+        }
+        .about-item-1{
+            align-items: center;
+            gap: 100px;
         }
         .about-item-text{
             width: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
         }
-        .about-number{
+        .about-item-text > p{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .about-item-text .about-number{
             font-size: 48px;
         }
+
     </style>
 </head>
 <body>
@@ -72,26 +101,30 @@
 
     <section class="about-content">
         <div class="about-main">
-            <div class="about-title">
+            <div class="about-title flex">
                 <h2>關於【健康參盒】</h2>
                 <p>為每個人找到專屬陪練的教練：「堅信有溫暖的陪伴，才有更好、更健康的體態。」</p>
             </div>
             <div class="about-item flex">
-                <div class="about-item-text">
-                    <p>since</p>
-                    <p class="about-number">2023</p>
+                <div class="about-item-1 flex">
+                    <div class="about-item-text">
+                        <p>since</p>
+                        <p class="about-number">2023</p>
+                    </div>
+                    <div class="about-item-text">
+                        <p>store</p>
+                        <p class="about-number">2</p>
+                    </div>
                 </div>
-                <div class="about-item-text">
-                    <p>store</p>
-                    <p class="about-number">2</p>
-                </div>
-                <div class="about-item-text">
-                    <p>coach</p>
-                    <p class="about-number">20+</p>
-                </div>
-                <div class="about-item-text">
-                    <p>member</p>
-                    <p class="about-number">100+</p>
+                <div class="about-item-1 flex">
+                    <div class="about-item-text">
+                        <p>coach</p>
+                        <p class="about-number">20+</p>
+                    </div>
+                    <div class="about-item-text">
+                        <p>member</p>
+                        <p class="about-number">100+</p>
+                    </div>
                 </div>
             </div>
             <div class="about-img">圖片</div>
