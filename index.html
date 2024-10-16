@@ -28,12 +28,12 @@
 
         .bg-item{
           position: relative;
-          top: 100px;
           width: 100%;
+          top: 100px;
         }
         
         .bg-item-course {
-          height: 1200px;
+          height: 1150px;
           transform: skewY(-3deg);
           background-color: #D6D6D6;
         }
@@ -42,8 +42,7 @@
           transform: skewY(3deg);
           width: 100%;
           max-width: 1080px;
-          height: 300px;
-          top: 50px;
+          top: 20px;
           position: relative;
           margin: auto;
        }
@@ -57,7 +56,7 @@
         }
 
         .main-title > h1{
-            font-size: 88px;
+            font-size: 96px;
         }
 
         .main-title > p{
@@ -71,26 +70,51 @@
        .course-img{
         width: 330px;
         height: 366px;
-        background-color: #ffb0b0;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
        }
+
+       .course-img .desc {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        background-color: #0C00D4;
+        color: white;
+        padding: 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .course-img .desc {
+            transition: bottom 0.5s;
+        }
+
+        .course-img:hover .desc {
+            bottom: 0;
+        }
 
        .col{
         width: 400px;
         flex-wrap: wrap;
         gap: 24px;
        }
+
        .col-middle{
         position: relative;
         top: 50px;
        }
+       
        .col-right{
         position: relative;
         top: 100px;
        }
 
        .bg-item-article {
-        top: 200px;
-        height: 600px;
+        height: 550px;
         transform: skewY(3deg);
         background-color: #D6D6D6;
         }
@@ -99,20 +123,21 @@
           transform: skewY(-3deg);
           width: 100%;
           max-width: 1080px;
-          height: 300px;
-          top: 50px;
+          top: 20px;
           position: relative;
           margin: auto;
        }
 
        .main-title-left{
             align-items: flex-start;
+            margin-bottom: 20px;
         }
         .article-card{
             width: 240px;
             display: flex;
             flex-direction: column;
             gap: 8px;
+            cursor: pointer;
         }
         .article-card-img{
             width: 240px;
@@ -121,9 +146,98 @@
         }
 
         .plan{
-            width: 1080px;
-            margin-top: 300px;
+            width: 100%;
             align-items: center;
+        }
+        .plan-card{
+            width: 240px;
+            height: 415px;
+            border-radius: 10px;
+            background-color: #99B3E8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .plan-list{
+            max-width: 1080px;
+            margin: auto;
+        }
+        .plan-card > p{
+            font-size:32px;
+        }
+        .cta{
+            background-image: url(/img/bg-cta-gym.png);
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+        }
+
+        .cta-item{
+            width: 550px;
+            margin: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .cta-item > h2{
+            font-size: 48px;
+        }
+
+        .cta-text{
+            align-items: center;
+            align-self: stretch;
+        }
+        .cta-text > p{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .btn-cta{
+            width: 260px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn-cta-default{
+            background-color: #0C00D4;
+            color:#FFF;
+        }
+        .btn-cta-default:hover{
+            background-color: #FFEB3C;
+            color:#000;
+        }
+        .more{
+            width: 1080px;
+            margin: auto;
+        }
+        .more-left{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .more-right{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .btn-more{
+            width: 160px;
+            height: 160px;
+            border-radius: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 800;
+        }
+        .btn-more-default{
+            background-color: #0C00D4;
+            color:#FFF;
+        }
+        .btn-more-default:hover{
+            background-color: #FFEB3C;
+            color:#000;
         }
 
     </style>
@@ -163,7 +277,7 @@
 
     <section class="foreword">
         <hr>
-        <h2>健身參(ㄙㄢ)盒，加你一盒變適(ㄙˋ)合</h2>
+        <h2>健身參(ㄙㄢ)盒<br>加你一盒變適(ㄙˋ)合</h2>
         <hr>
     </section>
 
@@ -176,20 +290,45 @@
             </div>
             <div class="list flex">
                 <div class="col flex">
-                    <div class="course-img"><img src="/img/pexels-ahmetkurt-25596680.png" alt=""></div>
-                    <div class="course-img">圖片</div>
+                    <div class="course-img">
+                        <img src="/img/gym01.png" alt="">
+                        <div class="desc">皮拉提斯</div>
+                    </div>
+                    <div class="course-img">
+                        <img src="/img/gym04.png" alt="">
+                        <div class="desc">燃脂飛輪</div>
+                    </div>
                 </div>
                 <div class="col col-middle flex">
-                    <div class="course-img">圖片</div>
-                    <div class="course-img">圖片</div>
+                    <div class="course-img">
+                        <img src="/img/gym02.png" alt="">
+                        <div class="desc">基礎瑜珈</div>
+                    </div>
+                    <div class="course-img">
+                        <img src="/img/gym05.png" alt="">
+                        <div class="desc">核心訓練</div>
+                    </div>
                 </div>
                 <div class="col col-right flex">
-                    <div class="course-img">圖片</div>
-                    <div class="course-img">圖片</div>
+                    <div class="course-img">
+                        <img src="/img/gym03.png" alt="">
+                        <div class="desc">有氧運動</div>
+                    </div>
+                    <div class="course-img">
+                        <img src="/img/gym06.png" alt="">
+                        <div class="desc">專屬教練</div>
+                    </div>
                 </div>
             </div>
         </div>
      </section>
+
+     <div class="more">
+        <div class="more-left">
+            <div class="btn-more btn-more-default"><img src="/img/icon-arrow-white.png" alt=""></div>
+        </div>
+     </div>
+     
 
      <section class="bg-item bg-item-article">
         <div class="article-list">
@@ -197,27 +336,32 @@
                 <p>最新消息</p>
                 <h1>NEWS</h1>
             </div>
-
             <div class="list flex">
                 <div class="article-card">
-                    <div class="article-card-img">圖片</div>
+                    <div class="article-card-img"><img src="/img/artical01.png" alt=""></div>
                     <p>跑步瘦身有用嗎？教你正確的跑步姿勢與祕訣！</p>
                 </div>
                 <div class="article-card">
-                    <div class="article-card-img">圖片</div>
+                    <div class="article-card-img"><img src="/img/artical02.png" alt=""></div>
                     <p>零基礎開始學瑜珈：新手也能輕鬆入門5大動作</p>
                 </div>
                 <div class="article-card">
-                    <div class="article-card-img">圖片</div>
+                    <div class="article-card-img"><img src="/img/artical03.png" alt=""></div>
                     <p>運動器材百百種，該練什麼器材才對呢？</p>
                 </div>
                 <div class="article-card">
-                    <div class="article-card-img">圖片</div>
+                    <div class="article-card-img"><img src="/img/artical04.png" alt=""></div>
                     <p>健身要找教練嗎？10大必要性全解析</p>
                 </div>
             </div>
         </div>
      </section>
+
+     <div class="more">
+        <div class="more-right">
+            <div class="btn-more btn-more-default"><img src="/img/icon-arrow-white.png" alt=""></div>
+        </div>
+     </div>
 
      <section class="plan">
         <div class="plan-list">
@@ -225,44 +369,53 @@
                 <p>方案選擇</p>
                 <h1>Four You</h1>
             </div>
-
             <div class="list flex">
                 <div class="plan-card">
-                    <p>標題</p>
+                    <p>單堂</p>
                     <hr>
                     <ul>
                         <li>1</li>
                         <li>2</li>
                     </ul>
-                    <p>價格</p>
+                    <p>$999</p>
                 </div>
                 <div class="plan-card">
-                    <p>標題</p>
+                    <p>月票</p>
                     <hr>
                     <ul>
                         <li>1</li>
                         <li>2</li>
                     </ul>
-                    <p>價格</p>
+                    <p>$1,999</p>
                 </div>
                 <div class="plan-card">
-                    <p>標題</p>
+                    <p>季票</p>
                     <hr>
                     <ul>
                         <li>1</li>
                         <li>2</li>
                     </ul>
-                    <p>價格</p>
+                    <p>$3,999</p>
                 </div>
                 <div class="plan-card">
-                    <p>標題</p>
+                    <p>年票</p>
                     <hr>
                     <ul>
                         <li>1</li>
                         <li>2</li>
                     </ul>
-                    <p>價格</p>
+                    <p>$12,999</p>
                 </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="cta">
+        <div class="cta-item flex">
+            <h2>Let's workout together</h2>
+            <div class="cta-text flex">
+                <p>免費健身體驗</p>
+                <div class="btn-cta btn-cta-default">立即預約體驗</div>
             </div>
         </div>
      </section>
