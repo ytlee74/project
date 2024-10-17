@@ -20,6 +20,8 @@
         .about-main{
             width: 1080px;
             margin: auto;
+            display: flex;
+            justify-content: space-between;
         }
         .about-title{
             width: 480px;
@@ -31,6 +33,10 @@
         .about-title > h2{
             font-size: 48px;
         }
+        .about-title > p{
+            font-size: 20px;
+            
+        }
 
         .about-img{
             width: 550px;
@@ -39,31 +45,27 @@
         }
         .about-item{
             display: flex;
-            width: 445px;
+            width: 480px;
             flex-direction: column;
             align-items: center;
             gap: 36px;
             flex-shrink: 0;
         }
         .about-item-1{
-            align-items: center;
-            gap: 100px;
+            margin: auto;
+            justify-content: space-between;
         }
         .about-item-text{
-            width: 180px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 16px;
+            width: 240px;
+            text-align: center;
         }
         .about-item-text > p{
             font-size: 24px;
-            font-weight: 700;
         }
         .about-item-text .about-number{
-            font-size: 48px;
+            font-size: 56px;
         }
+
 
     </style>
 </head>
@@ -85,7 +87,8 @@
     </header>
 
     <div class="page-banner">
-        <h1 class="page-title">關於我們</h1>
+        <img src="" alt="">
+        <h1>關於我們</h1>
     </div>
 
     <div class="breadcrumbList">
@@ -100,33 +103,35 @@
     </div>
 
     <section class="about-content">
-        <div class="about-main">
-            <div class="about-title flex">
-                <h2>關於【健康參盒】</h2>
-                <p>為每個人找到專屬陪練的教練：「堅信有溫暖的陪伴，才有更好、更健康的體態。」</p>
-            </div>
-            <div class="about-item flex">
-                <div class="about-item-1 flex">
-                    <div class="about-item-text">
-                        <p>since</p>
-                        <p class="about-number">2023</p>
+        <div class="about-main flex">
+            <div class="a123">
+                <div class="about-title flex">
+                    <h2>關於【健康參盒】</h2>
+                    <p>為每個人找到專屬陪練的教練：「堅信有溫暖的陪伴，才有更好、更健康的體態。」</p>
+                </div>
+                <div class="about-item flex">
+                    <div class="about-item-1 flex">
+                        <div class="about-item-text">
+                            <p>since</p>
+                            <p class="about-number">2023</p>
+                        </div>
+                        <div class="about-item-text">
+                            <p>store</p>
+                            <p class="about-number">2</p>
+                        </div>
                     </div>
-                    <div class="about-item-text">
-                        <p>store</p>
-                        <p class="about-number">2</p>
+                    <div class="about-item-1 flex">
+                        <div class="about-item-text">
+                            <p>coach</p>
+                            <p class="about-number">20+</p>
+                        </div>
+                        <div class="about-item-text">
+                            <p>member</p>
+                            <p class="about-number">100+</p>
+                        </div>
                     </div>
                 </div>
-                <div class="about-item-1 flex">
-                    <div class="about-item-text">
-                        <p>coach</p>
-                        <p class="about-number">20+</p>
-                    </div>
-                    <div class="about-item-text">
-                        <p>member</p>
-                        <p class="about-number">100+</p>
-                    </div>
-                </div>
-            </div>
+             </div>               
             <div class="about-img">圖片</div>
         </div>
     </section>
