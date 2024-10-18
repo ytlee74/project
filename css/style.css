@@ -28,10 +28,29 @@ header{
 section{
     margin: 50px 0px;
 }
+
+.spaceing-g8{
+    gap: 8px;
+}
+
+.spaceing-g12{
+    gap: 12px;
+}
+
+.spaceing-g24{
+    gap: 24px;
+}
+
+.spaceing-g36{
+    gap: 36px;
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
 }
+
+
 .menu{
     width: 100%;
     max-width: 1080px;
