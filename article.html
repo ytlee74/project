@@ -12,6 +12,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .page-banner-article{
+            background-image: url(./img/banner-img01.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+        }
+
+
+
+
+
+        .page-box-list{
+            width: 300px;
+            margin: auto;
+            align-items: center;
+        }
+        .btn-page-number{
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            color: #888888;
+            border: 1px solid #B0B0B0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn-page-number-clicked{
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            color: #FFF;
+            background-color: #888888;
+            border: 1px solid #888888;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -30,5 +74,58 @@
         </div>
     </header>
 
+    <div class="page-banner page-banner-article flex">
+        <h1>最新消息</h1>
+    </div>
+
+    <div class="breadcrumbList">
+        <div class="breadcrumb-container">
+          <ul class="breadcrumb flex">
+            <li><img src="./img/icon-home.png" alt="" width="24"></li>
+            <li><a href="/">首頁</a></li>
+            <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
+            <li><a href="#">最新消息</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <section class="page-box">
+        <div class="page-box-list flex">
+            <div class="btn-page-number-clicked">1</div>
+            <div class="btn-page-number">2</div>
+            <div class="btn-page-number">3</div>
+            <div class="btn-page-number">4</div>
+            <div class="btn-page-number">5</div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="brand flex">
+                <div class="logo-footer"><img src="./img/logo_mb.png" alt=""></div>
+                <div class="social-icon flex">
+                    <img src="./img/icon-fb.png" alt="">
+                    <img src="./img/icon-ig.png" alt="">
+                    <img src="./img/icon-YT.png" alt="">
+                    <img src="./img/icon-LINE.png" alt="">
+                </div>
+            </div>
+            <div class="store-1">
+                <p>忠孝店</p>
+                <p>(02)2233-5566</p>
+                <p>地址地址地址地址地址地址地址地址地址</p>
+            </div>
+            <div class="store-2">
+                <p>內湖店</p>
+                <p>(02)2234-5566</p>
+                <p>地址地址地址地址地址地址地址地址地址</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2024. All Right Reserved.</p>
+            <p>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品，僅供學習、展示之用途。</p>
+        </div>
+    </footer>
 </body>
 </html>
