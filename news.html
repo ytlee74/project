@@ -20,8 +20,67 @@
             background-position: center;
             opacity: 0.8;
         }
-        main{
+        .new-content{
+            width: 100%;
+            margin: auto;
+            max-width: 1080px;
+        }
+        .main-article-post{
+            width: 70%;
+            margin: auto;
+        }
+        .post-content{
+            width: 840px;
+            flex-direction: column;
+        }
+        .article-addition .article-category{
+            color:#FFF;
+            background-color: #0C00D4;
+            padding: 5px 10px;
+        }
+        h1.article-title{
+            font-size: 36px;
+        }
+
+        .read-more{
+            width: 840px;
             margin: 50px 0px;
+        }
+        .previous{
+            flex-direction: column;
+            align-items: flex-start;
+            flex-shrink: 0;
+            align-self: stretch;
+        }
+        .next{
+            flex-direction: column;
+            align-items: flex-end;
+            flex-shrink: 0;
+            align-self: stretch;
+        }
+        .btn-previous{
+            width: 170px;
+            padding: 10px;
+            color: #FFF;
+            background-color: #0C00D4;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-next{
+            width: 170px;
+            padding: 10px;
+            color: #FFF;
+            background-color: #0C00D4;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+        .aside{
+            width: 30%;
         }
     </style>
 
@@ -53,19 +112,50 @@
             <li><img src="./img/icon-home.png" alt="" width="24"></li>
             <li><a href="/">首頁</a></li>
             <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
-            <li><a href="#">最新消息</a></li>
+            <li><a href="/article.html">最新消息</a></li>
             <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
-            <li><a href="#">文章標題文章標題文章標題文章標題文章標題文章標題文章標題</a></li>
+            <li>文章標題文章標題文章標題文章標題文章標題文章標題文章標題</li>
           </ul>
         </div>
     </div>
     
-    <main class="article-post">
-        <div class="post-img"><img src="./img/artcle-img-01.jpg" alt=""></div>
+    <section class="news-post">
+        <div class="new-content flex">
+            <div class="main-article-post left">
+                <div class="post-content flex spaceing-g24">
+                    <div class="post-img"><img src="./img/artcle-img-01.jpg" alt=""></div>
+                    <div class="article-addition flex">
+                        <p class="article-category">健身知識</p>
+                        <p class="article-time">2024-09-05</p>
+                    </div>
+                    <h1 class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題文章標題</h1>
+                    <p class="article-paragraph">文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容</p>
+                    <p class="article-paragraph">文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容</p>
+                </div>
+                <div class="read-more flex">
+                    <div class="previous flex spaceing-g12">
+                        <div class="btn-previous flex spaceing-g8">
+                            <img src="./img/icon-arrow-white.png" alt=""  width="12">
+                            <p>Previous</p>
+                        </div>
+                        <div class="previous-name">文章標題文章標題文章標題文章標題文章標題</div>
+                    </div>
+                    <div class="next flex spaceing-g12">
+                        <div class="btn-next flex spaceing-g8">
+                            <p>Next</p>
+                            <img src="./img/icon-arrow-white.png" alt=""  width="12">
+                        </div>
+                        <div class="previous-name">文章標題文章標題文章標題文章標題文章標題</div>
+                    </div>
+                </div>
+            </div>
 
-    </main>
+            <div class="aside">
 
-
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-info">
