@@ -12,6 +12,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <style>
+        .page-banner-course{
+            background-image: url(./img/banner-img01.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+        }
+
+        .course-main{
+            width: 100%;
+        }
+        .course-item-list{
+            flex-direction: column;
+        }
+        .course-item{
+            margin: auto;
+            max-width: 1080px;
+        }
+
+        .course-page-img{
+            width: 400px;
+            height: 400px;
+            background-color: #D9D9D9;
+        }
+        .course-text{
+            display: flex;
+            width: 587px;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .btn-course-reserve{
+            width: 260px;
+            height: 50px;
+            color: #fff;
+            background-color: #0C00D4;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-course-reserve:hover{
+            width: 260px;
+            height: 50px;
+            color: #000;
+            background-color: #FFEB3C;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        </style>
+
 </head>
 <body>
     <header>
@@ -31,5 +85,68 @@
         </div>
     </header>
 
+    <div class="page-banner page-banner-course flex">
+        <h1>課程一覽</h1>
+    </div>
+
+    <div class="breadcrumbList">
+        <div class="breadcrumb-container">
+          <ul class="breadcrumb flex">
+            <li><img src="./img/icon-home.png" alt="" width="24"></li>
+            <li><a href="/">首頁</a></li>
+            <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
+            <li><a href="#">課程一覽</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <section class="course-main">
+        <div class="course-item-list flex spaceing-g36">
+            <div class="course-item flex spaceing-g24">
+                <div class="course-page-img">圖片</div>
+                <div class="course-text spaceing-g24">
+                    <h2>課程名稱</h2>
+                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
+                    <div class="btn-course-reserve">立即預約體驗</div>
+                </div>
+            </div>
+            <div class="course-item flex spaceing-g24">
+                <div class="course-page-img">圖片</div>
+                <div class="course-text spaceing-g24">
+                    <h2>課程名稱</h2>
+                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
+                    <div class="btn-course-reserve">立即預約體驗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <div class="brand flex">
+                <div class="logo-footer"><img src="./img/logo_mb.png" alt=""></div>
+                <div class="social-icon flex">
+                    <img src="./img/icon-fb.png" alt="">
+                    <img src="./img/icon-ig.png" alt="">
+                    <img src="./img/icon-YT.png" alt="">
+                    <img src="./img/icon-LINE.png" alt="">
+                </div>
+            </div>
+            <div class="store-1">
+                <p>忠孝店</p>
+                <p>(02)2233-5566</p>
+                <p>地址地址地址地址地址地址地址地址地址</p>
+            </div>
+            <div class="store-2">
+                <p>內湖店</p>
+                <p>(02)2234-5566</p>
+                <p>地址地址地址地址地址地址地址地址地址</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2024. All Right Reserved.</p>
+            <p>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品，僅供學習、展示之用途。</p>
+        </div>
+    </footer>
 </body>
 </html>
