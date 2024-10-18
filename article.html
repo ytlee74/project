@@ -21,21 +21,58 @@
             opacity: 0.8;
         }
 
-
-
-
-
-        .page-box-list{
-            width: 300px;
+        .category-list{
+            width: 100%;
+        }
+        .category-item{
+            width: 1080px;
             margin: auto;
+            justify-content: flex-start;
+        }
+        .btn-category{
+            color: #FFF;
+            background-color: #0C00D4;
+            padding: 4px 48px;
+        }
+        .btn-category:hover{
+            color: #000;
+            background-color: #FFEB3C;
+            padding: 4px 48px;
+        }
+
+
+        .article-main{
+            width: 100%;
+        }
+
+        .article-info-list{
+            width: 1080px;
+            margin: auto;
+        }
+
+        .article-info{
+            width: 480px;
+            flex-direction: column;
+        }
+
+        .article-title{
+            font-size: 24px;
+        }
+
+
+
+
+        .page-box{
+            width: 100%;
+        }
+        .page-box-list{
             align-items: center;
+            justify-content: center;
         }
         .btn-page-number{
             width: 48px;
             height: 48px;
             border-radius: 8px;
-            color: #888888;
-            border: 1px solid #B0B0B0;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -43,17 +80,15 @@
             cursor: pointer;
         }
         .btn-page-number-clicked{
-            width: 48px;
-            height: 48px;
-            border-radius: 8px;
             color: #FFF;
             background-color: #888888;
             border: 1px solid #888888;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
+        .btn-page-number-none{
+            color: #888888;
+            border: 1px solid #B0B0B0;
+        }
+
     </style>
 
 </head>
@@ -89,13 +124,80 @@
         </div>
     </div>
 
+    <section class="category-list">
+        <div class="category-item flex spaceing-g24">
+            <p class="btn-category">場館公告</p>
+            <p class="btn-category">健身知識</p>
+        </div>
+    </section>
+
+    <section class="article-main">
+        <div class="article-info-list flex">
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"></div>
+                <div class="article-addition flex ">
+                    <p>健身知識</p>
+                    <p>2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"></div>
+                <div class="article-addition flex ">
+                    <p>健身知識</p>
+                    <p>2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+        </div>
+        <div class="article-info-list flex">
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"></div>
+                <div class="article-addition flex ">
+                    <p>健身知識</p>
+                    <p>2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"></div>
+                <div class="article-addition flex ">
+                    <p>健身知識</p>
+                    <p>2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+        </div>
+        <div class="article-info-list flex">
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"></div>
+                <div class="article-addition flex ">
+                    <p>健身知識</p>
+                    <p>2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"></div>
+                <div class="article-addition flex ">
+                    <p>健身知識</p>
+                    <p>2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+        </div>
+
+    </section>
+
+
+
     <section class="page-box">
-        <div class="page-box-list flex">
-            <div class="btn-page-number-clicked">1</div>
-            <div class="btn-page-number">2</div>
-            <div class="btn-page-number">3</div>
-            <div class="btn-page-number">4</div>
-            <div class="btn-page-number">5</div>
+        <div class="page-box-list flex spaceing-g12">
+            <div class="btn-page-number btn-page-number-clicked">1</div>
+            <div class="btn-page-number btn-page-number-none">2</div>
+            <div class="btn-page-number btn-page-number-none">3</div>
+            <div class="btn-page-number btn-page-number-none">4</div>
+            <div class="btn-page-number btn-page-number-none">5</div>
 
         </div>
     </section>
