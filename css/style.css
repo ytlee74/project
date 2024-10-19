@@ -181,13 +181,6 @@ footer{
 
 /* 響應式: 選單header */
 @media screen and (max-width : 950px) {
-    .menu{
-        width: 100%;
-        max-width: 1080px;
-        align-items: center;
-        margin: auto;
-        padding: 0 30px;
-    }
     nav{
         display: none;
     }
