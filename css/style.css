@@ -26,6 +26,9 @@ header{
     z-index: 999;
 }
 
+.hidden{
+    display: none;
+}
 section{
     margin: 50px 0px;
 }
@@ -59,6 +62,7 @@ section{
     margin: auto;
     padding: 0 30px;
 }
+
 nav{
     width: 600px;
 }
@@ -173,6 +177,29 @@ footer{
     text-align: center;
     color: #FFF;
 }
+
+
+/* 響應式: 選單header */
+@media screen and (max-width : 950px) {
+    .menu{
+        width: 100%;
+        max-width: 1080px;
+        align-items: center;
+        margin: auto;
+        padding: 0 30px;
+    }
+    nav{
+        display: none;
+    }
+    nav.hidden{
+        display: block;
+    }
+    nav.hidden ul{
+        justify-content: flex-end;
+    }
+    
+}
+
 
 /* 響應式: 主軸 */
 @media screen and (max-width : 950px) {
