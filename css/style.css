@@ -137,6 +137,13 @@ footer{
     color: #FFF;
 }
 
+.rotate-90{
+    transform: rotate(90deg);
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
+
 
 /* 響應式: 選單header */
 @media screen and (max-width : 950px) {

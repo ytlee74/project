@@ -28,8 +28,8 @@
             flex-direction: column;
         }
         .course-item{
-            margin: auto;
             max-width: 1080px;
+            margin: auto;
         }
 
         .course-page-img{
@@ -64,21 +64,68 @@
             align-items: center;
         }
 
-        .curriculum-table{
+        hr{
+            width: 80%;
+            border: 1px solid #000;
+        }
+
+        .foreword > h2{
+            text-align: center;
+            line-height: 64px;
+            font-size: 36px;
+            font-family: 'Noto Serif TC';
+        }
+
+        .curriculum{
             width: 100%;
         }
         .curriculum-list{
             max-width: 1080px;
             margin: auto;
+            margin-bottom: 50px;
         }
+
+        .curriculum-name{
+            align-items: center;
+        }
+
+        .curriculum-name > h2{
+            font-size: 32px;
+        }
+
         .curriculum-month-select{
             color: #fff;
             background-color: #0C00D4;
             padding: 5px 20px;
             
         }
+
         .curriculum-week-select{
             align-items: center;
+        }
+
+        .curriculum-table{
+            width: 1080px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            letter-spacing: 1px;
+            border-spacing: 10px;
+            text-align: center;
+        }
+
+        td,th {
+            padding: 10px 20px;
+            border: 1px solid #D9D9D9;
+        }
+
+        th {
+            background-color: rgb(235, 235, 235);
+        }
+        .week-list{
+            color:#000;
+            background-color: #D6D6D6;
         }
 
         </style>
@@ -128,7 +175,7 @@
                 <div class="course-page-img">圖片</div>
                 <div class="course-text spaceing-g24">
                     <h2>課程名稱</h2>
-                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
+                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
                     <div class="btn-course-reserve">立即預約體驗</div>
                 </div>
             </div>
@@ -136,29 +183,110 @@
                 <div class="course-page-img">圖片</div>
                 <div class="course-text spaceing-g24">
                     <h2>課程名稱</h2>
-                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
+                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
                     <div class="btn-course-reserve">立即預約體驗</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="curriculum-table">
+    <section class="foreword">
+        <hr>
+        <h2>立即加入健身參盒</h2>
+        <hr>
+    </section>
+
+    <section class="curriculum">
         <div class="curriculum-list flex">
             <div class="curriculum-name flex spaceing-g24">
                 <h2>健身curriculum</h2>
-                <div class="curriculum-month-select flex">
+                <div class="curriculum-month-select flex spaceing-g12">
                     <p>10月份</p>
-                    <img src="./img/icon-arrow-white.png" alt=""width="12">
+                    <div class="rotate-90"><img src="./img/icon-arrow-white.png" alt=""width="12"></div>
                 </div>
             </div>
             <div class="curriculum-week-select flex  spaceing-g24">
+                <div class="rotate-180"><img src="./img/icon-arrow-black.png" alt="" width="12"></div>
                 <p>10/06-10/12</p>
-                <img src="./img/icon-arrow-black.png" alt="" width="12">
+                <div><img src="./img/icon-arrow-black.png" alt="" width="12"></div>
             </div>
         </div>
+        <div class="curriculum-table">
+            <table>
+                <thead>
+                    <tbody>
+                        <tr>
+                            <td class="time"></td>
+                            <td class="week-list">SUN</td>
+                            <td class="week-list">MON</td>
+                            <td class="week-list">TUE</td>
+                            <td class="week-list">WED</td>
+                            <td class="week-list">THU</td>
+                            <td class="week-list">FRI</td>
+                            <td class="week-list">SAT</td>
+                        </tr>
+                        <tr>
+                            <td class="time" rowspan="2">早上</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time" rowspan="2">下午</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time" rowspan="2">晚上</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </div>
 
-        
     </section>
 
     <footer>
