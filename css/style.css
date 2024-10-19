@@ -26,11 +26,12 @@ header{
     z-index: 999;
 }
 
-.hidden{
-    display: none;
-}
 section{
     margin: 50px 0px;
+}
+
+.hidden{
+    display: none;
 }
 
 .spaceing-g8{
@@ -69,13 +70,13 @@ nav{
 
 ul{
     list-style: none;
+    justify-content: space-around;
 }
 
 nav ul li{
     font-size: 16px;
     text-decoration: none;
 }
-
 
 .main-area{
     width: 100%;
