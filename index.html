@@ -267,6 +267,13 @@
             display: flex;
             justify-content: flex-end;
         }
+
+        .more-text{
+            z-index: 800;
+            justify-content: center;
+            align-items: center;
+        }
+        
         .btn-more{
             width: 160px;
             height: 160px;
@@ -277,16 +284,118 @@
             z-index: 800;
             cursor: pointer;
         }
+
+
         .btn-more-default{
             background-color: #0C00D4;
             color:#FFF;
         }
+
         .btn-more-default:hover{
             width: 300px;
             background-color: #FFEB3C;
             color:#000;
         }
 
+
+
+        /* 響應式: 主軸 */
+        @media screen and (max-width : 950px) {
+            .main-area{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .main-area-content{
+                margin: 0px 50px;
+                top: 50px;
+                left: 0px;
+            }
+            
+            .main-area-content > h1{
+                font-size: 36px;
+                line-height: 48px;
+            }
+            
+            .main-area-content > p{
+                width: 100%;
+                font-size: 20px;
+            }
+
+        }
+
+        /* 響應式: course區塊 */
+        @media screen and (max-width : 950px) {
+            .bg-item-course {
+                height: 2750px;
+                transform: skewY(-3deg);
+                background-color: #D6D6D6;
+                }
+                
+                .bg-item-course .course-list {
+                    transform: skewY(3deg);
+                    width: 100%;
+                    max-width: 1080px;
+                    top: 20px;
+                    position: relative;
+                    margin: auto;
+                }
+
+            .list{
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* 響應式: article區塊 */
+        @media screen and (max-width : 950px) {
+            .bg-item-article {
+                height: 1200px;
+                transform: skewY(3deg);
+                background-color: #D6D6D6;
+            }
+
+            .bg-item-article .article-list {
+                transform: skewY(-3deg);
+                width: 100%;
+                max-width: 1080px;
+                top: 20px;
+                position: relative;
+                margin: auto;
+            }
+
+        }
+        
+        /* 響應式: more按鈕區塊 */
+        @media screen and (max-width : 950px) {
+            .more{
+                max-width: 1080px;
+                margin: auto;
+            }
+            .more-left{
+                display: flex;
+                justify-content: center;
+            }
+            .more-right{
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+        /* 響應式: CTA區塊 */
+        @media screen and (max-width : 950px) {
+            .cta-item{
+                margin: auto;
+                align-items: flex-start;
+            }
+            .cta-text{
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+        }
 
 
     </style>
@@ -377,9 +486,20 @@
         </div>
      </section>
 
+     <!-- <div class="more">
+        <div class="more-left">
+            <div class="btn-more btn-more-default">
+                <p class="btn-more-text">READ MORE</p>
+                <img src="./img/icon-arrow-white.png" alt="">
+            </div>
+        </div>
+     </div> -->
+
      <div class="more">
         <div class="more-left">
-            <div class="btn-more btn-more-default"><img src="./img/icon-arrow-white.png" alt=""></div>
+            <div class="btn-more btn-more-default">
+                <img src="./img/icon-arrow-white.png" alt="">
+            </div>
         </div>
      </div>
      
@@ -413,7 +533,9 @@
 
      <div class="more">
         <div class="more-right">
-            <div class="btn-more btn-more-default"><img src="./img/icon-arrow-white.png" alt=""></div>
+            <div class="btn-more btn-more-default">
+                <img src="./img/icon-arrow-white.png" alt="">
+            </div>
         </div>
      </div>
 

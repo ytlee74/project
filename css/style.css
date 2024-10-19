@@ -1,3 +1,5 @@
+/* 共用 */
+
 *{
     box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ h1, h2, h3{
     font-style: normal;
     font-weight: 700;
 }
+
 p{
     font-family: "Noto Sans TC";
     font-style: normal; 
@@ -55,7 +58,15 @@ section{
     justify-content: space-between;
 }
 
+.rotate-90{
+    transform: rotate(90deg);
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
 
+
+/* header 導覽列選單 */
 .menu{
     width: 100%;
     max-width: 1080px;
@@ -79,7 +90,7 @@ nav ul li{
 }
 
 
-
+/* 各頁面banner區塊 */
 .page-banner{
     width: 100%;
     margin: auto;
@@ -94,6 +105,7 @@ nav ul li{
     font-weight: 700;
 }
 
+/* breadcrumb麵包屑區塊 */
 .breadcrumbList{
     width: 100%;
     margin-top: 30px;
@@ -107,6 +119,8 @@ nav ul li{
     gap: 10px;
 }
 
+
+/* footer頁尾區塊 */
 footer{
     width: 100%;
     background-color: #000;
@@ -137,13 +151,6 @@ footer{
     color: #FFF;
 }
 
-.rotate-90{
-    transform: rotate(90deg);
-}
-.rotate-180{
-    transform: rotate(180deg);
-}
-
 
 /* 響應式: 選單header */
 @media screen and (max-width : 950px) {
@@ -155,48 +162,5 @@ footer{
     }
     .mobile-menu ul{
         justify-content: flex-end;
-    }
-    .mobile-menu.active + .main-nav {
-        display: block; /* 顯示手機菜單 */
-        position: absolute;
-        background: white;
-        right: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-    
-}
-
-
-/* 響應式: 主軸 */
-@media screen and (max-width : 950px) {
-    .main-area{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-area-content{
-        margin: auto;
-    }
-    .main-area-content > h1{
-        font-size: 36px;
-    }
-    
-    .main-area-content > p{
-        font-size: 20px;
-    }
-
-}
-
-/* 響應式: CTA區塊 */
-@media screen and (max-width : 950px) {
-    .cta-item{
-        margin: auto;
-        align-items: flex-start;
-    }
-    .cta-text{
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
+    }   
 }
