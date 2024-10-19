@@ -184,11 +184,19 @@ footer{
     nav{
         display: none;
     }
-    nav.hidden{
+    .mobile-menu{
         display: block;
     }
-    nav.hidden ul{
+    .mobile-menu ul{
         justify-content: flex-end;
+    }
+    .mobile-menu.active + .main-nav {
+        display: block; /* 顯示手機菜單 */
+        position: absolute;
+        background: white;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
     }
     
 }
@@ -211,6 +219,7 @@ footer{
     .main-area-content > p{
         font-size: 20px;
     }
+
 }
 
 /* 響應式: CTA區塊 */
