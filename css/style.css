@@ -82,16 +82,12 @@ nav ul li{
 .right{
     float: right;
 }
-
-.left{
-    float: left;
-}
-
 .clear{
     clear: both;
 }
 
 .main-area-content{
+    max-width: 600px;
     position: relative;
     top: 50px;
     left: 89px;
@@ -107,25 +103,6 @@ nav ul li{
 .main-area-content > p{
     width: 450px;
     font-size: 24px;
-}
-
-@media screen and (max-width : 950px) {
-    
-    .main-area{
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-area-content{
-        margin: auto;
-    }
-    .main-area-content > h1{
-        font-size: 36px;
-    }
-    
-    .main-area-content > p{
-        font-size: 20px;
-    }
 }
 
 hr{
@@ -195,4 +172,36 @@ footer{
 .copyright{
     text-align: center;
     color: #FFF;
+}
+
+/* 響應式: 主軸 */
+@media screen and (max-width : 950px) {
+    .main-area{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-area-content{
+        margin: auto;
+    }
+    .main-area-content > h1{
+        font-size: 36px;
+    }
+    
+    .main-area-content > p{
+        font-size: 20px;
+    }
+}
+
+/* 響應式: CTA區塊 */
+@media screen and (max-width : 950px) {
+    .cta-item{
+        margin: auto;
+        align-items: flex-start;
+    }
+    .cta-text{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 }
