@@ -153,7 +153,7 @@ footer{
 
 
 /* 響應式: 選單header */
-@media screen and (max-width : 950px) {
+@media screen and (max-width : 990px) {
     nav{
         display: none;
     }
