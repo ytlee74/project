@@ -25,6 +25,7 @@
             width: 100%;
             max-width: 1080px;
             margin: auto;
+            justify-content: space-around;
         }
 
         .form-sop{
@@ -32,7 +33,6 @@
         }
         .sop-step{
             flex-direction: column;
-            
             align-items: center;
         }
         .sop-step-text{
@@ -44,6 +44,40 @@
             height: 150px;
             border-radius: 150px;
             background-color: #CCC;
+        }
+
+        h2.form-title{
+            margin-bottom: 50px;
+        }
+        .form-content{
+            flex-direction: column;
+        }
+        .form-text{
+            flex-direction: column;
+        }
+
+        input{
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid #B0B0B0;
+        }
+
+        .send{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-send{
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .btn-send-default{
+            background-color: #0C00D4;
+            
+            color:#FFF;
         }
 
     </style>
@@ -107,8 +141,33 @@
         </div>
 
         <div class="form right">
+            <h2 class="form-title">｜立即填表｜免費贈1對1教練課程乙堂｜</h2>
+            <div class="form-content flex spaceing-g48">
+                <div class="form-text flex spaceing-g8">
+                    <label for="name">姓名 *</label>
+                    <input type="text" id="name" placeholder="請輸入姓名" />
+                </div>
+                <div class="form-text flex spaceing-g8">
+                    <label for="phone-number">聯絡電話 *</label>
+                    <input type="text" id="phone-number" placeholder="請輸入電話 ex. 0911222333" />
+                </div>
+                <div class="form-text flex spaceing-g8">
+                    <label for="email">電子郵件 *</label>
+                    <input type="text" id="email" placeholder="請輸入電子郵件 ex. best@a.com" />
+                </div>
+                <div class="form-text flex spaceing-g8">
+                    <label for="remark">備註</label>
+                    <input type="text" id="remark" placeholder="備註" />
+                </div>
+                <div class="send">
+                    <div class="btn-send btn-send-default">送出資料</div>
+                </div>
+                
+            </div>
 
+            
         </div>
+        <div class="clear"></div>
     </section>
 
 
