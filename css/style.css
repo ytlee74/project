@@ -25,7 +25,8 @@ p{
 header{
     position: sticky;
     top: 0;
-    background-color: #e7e7e7;
+    background-color: #FFF;
+    opacity: 0.9;
     z-index: 999;
 }
 
@@ -100,8 +101,20 @@ ul{
 
 nav ul li{
     font-size: 16px;
+    font-weight: 500;
 }
 nav ul li a{
+    color:#000;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    color: #FFF;
+    transform: scale(1.06)
+}
+
+nav ul li a:hover{
+    color: #0C00D4;
     text-decoration: none;
 }
 
