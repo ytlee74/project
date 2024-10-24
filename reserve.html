@@ -6,7 +6,7 @@
     <meta name="description" content="健身房首選Be Strong">
     <title>預約體驗</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <!-- 引入 Google Font 字體 : Noto Sans TC, Noto Serif TC, Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +14,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        .page-banner-about{
+        .page-banner-reserve{
             background-image: url(./img/banner-img01.png);
             background-size: cover;
             background-position: center;
             opacity: 0.8;
         }
+
+        .form-area{
+            width: 100%;
+            max-width: 1080px;
+            margin: auto;
+        }
+
+        .form-sop{
+            width: 150px;
+        }
+        .sop-step{
+            flex-direction: column;
+            
+            align-items: center;
+        }
+        .sop-step-text{
+            flex-direction: column;
+            align-items: center;
+        }
+        .sop-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            background-color: #CCC;
+        }
+
     </style>
 </head>
 <body>
@@ -46,7 +72,7 @@
     </header>
 
     <div class="page-banner page-banner-reserve flex">
-        <h1>最新消息</h1>
+        <h1>預約體驗</h1>
     </div>
 
     <div class="breadcrumbList">
@@ -59,6 +85,36 @@
           </ul>
         </div>
     </div>
+
+    <section class="form-area flex">
+        <div class="form-sop left">
+            <div class="sop-step flex spaceing-g24">
+                <div class="sop-step-text flex spaceing-g12">
+                    <div class="sop-img"></div>
+                    <p>填寫表單</p>
+                </div>
+                <img src="./img/icon-arrow-down.png" alt="" width="24">
+                <div class="sop-step-text flex spaceing-g12">
+                    <div class="sop-img"></div>
+                    <p>聯繫確認</p>
+                </div>
+                <img src="./img/icon-arrow-down.png" alt="" width="24">
+                <div class="sop-step-text flex spaceing-g12">
+                    <div class="sop-img"></div>
+                    <p>兌換課程</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form right">
+
+        </div>
+    </section>
+
+
+
+
+
 
     <footer>
         <div class="footer-info">
