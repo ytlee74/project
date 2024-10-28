@@ -148,7 +148,6 @@ nav ul li a:hover{
 }
 .breadcrumb{
     justify-content: flex-start;
-    gap: 10px;
 }
 .breadcrumb li a{
     text-decoration: none;
@@ -209,7 +208,6 @@ footer{
     .breadcrumb{
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 10px;
     }
 
 }
