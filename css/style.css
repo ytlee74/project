@@ -203,7 +203,7 @@ footer{
 /* 響應式: 麵包屑*/
 @media screen and (max-width : 990px) {
     .breadcrumb-container{
-        margin: auto;
+        margin: 0px 20px;
         display: flex;
     }
     .breadcrumb{
