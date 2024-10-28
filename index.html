@@ -21,8 +21,6 @@
         }
 
 
-
-
         /* 響應式: 主軸 */
         .main-area{
             width: 100%;
@@ -42,6 +40,8 @@
             font-size: 64px;
             line-height: 72px;
             margin-bottom: 30px;
+            color: #FFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         .main-area-content > p{
@@ -222,7 +222,6 @@
             max-width: 550px;
             margin: auto;
             flex-direction: column;
-            align-items: flex-start;
         }
         .cta-item > h2{
             font-size: 48px;
@@ -413,14 +412,19 @@
 
         /* 響應式: CTA區塊 */
         @media screen and (max-width : 990px) {
+            .cta{
+                height: 320px;
+            }
             .cta-item{
-                margin: auto;
-                align-items: flex-start;
+                text-align: center;
             }
             .cta-text{
                 flex-direction: column;
                 flex-wrap: wrap;
                 gap: 12px;
+            }
+            .btn-cta{
+                margin: auto;
             }
         }
 

@@ -26,7 +26,7 @@ header{
     position: sticky;
     top: 0;
     background-color: #FFF;
-    opacity: 0.9;
+    opacity: 1;
     z-index: 999;
 }
 
@@ -192,4 +192,16 @@ footer{
     .mobile-menu ul{
         justify-content: flex-end;
     }   
+}
+
+
+/* 響應式: 頁尾footer */
+@media screen and (max-width : 990px) {
+    .footer-info{
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+    .copyright{
+        margin: 0px 30px;
+    }
 }
