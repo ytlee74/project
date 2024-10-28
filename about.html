@@ -23,10 +23,10 @@
             opacity: 0.8;
         }
         .about-content{
-            width: 100%
+            width: 100%;
         }
         .about-main{
-            width: 1080px;
+            max-width: 1080px;
             margin: auto;
             margin-bottom: 56px;
         }
@@ -46,6 +46,10 @@
             font-size: 48px;
         }
 
+        img{
+            max-width: 100%;
+            height: auto;
+        }
         .about-img {
             width: 550px;
             margin: auto;
@@ -76,11 +80,17 @@
         }
 
         /* 響應式: CTA區塊 */
-        @media screen and (max-width : 950px) {
+        @media screen and (max-width : 990px) {
             .about-main{
-                margin: auto;
-                flex-direction: column;
+                width: 100%;
                 flex-wrap: wrap;
+            }
+            .about-item{
+                width: 100%;
+            }
+            .about-paragraph{
+                width: 100%;
+                margin: 0 20px;
             }
 
         }
@@ -121,7 +131,7 @@
             <li><img src="./img/icon-home.png" alt="" width="24"></li>
             <li><a href="./index.html">首頁</a></li>
             <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
-            <li><a href="#">最新消息</a></li>
+            <li><a href="#">關於我們</a></li>
           </ul>
         </div>
     </div>
