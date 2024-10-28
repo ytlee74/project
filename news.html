@@ -26,11 +26,10 @@
         .new-content{
             margin: auto;
             max-width: 1080px;
-            overflow: hidden;
         }
 
         .main-article-post{
-            flex: 3;
+            flex: 5;
         }
 
         .post-content{
@@ -47,12 +46,20 @@
         }
 
         .article-paragraph{
-            margin: 30px 0px;
+            margin: 10px 0px;
+        }
+
+        .article-paragraph h2,h3{
+            line-height: 2;
+        }
+
+        .article-paragraph p{
+            font-weight: 400;
         }
 
         .read-more{
             max-width: 840px;
-            margin: 50px 0px;
+            margin: 100px 0px 20px 0px;
         }
         .previous{
             flex-direction: column;
@@ -66,7 +73,8 @@
             flex-shrink: 0;
             align-self: stretch;
         }
-        .btn-previous{
+
+        .btn-further{
             width: 170px;
             padding: 10px;
             color: #FFF;
@@ -74,20 +82,56 @@
             justify-content: center;
             align-items: center;
         }
-        .btn-next{
+        /* .btn-previous{
             width: 170px;
             padding: 10px;
             color: #FFF;
             background-color: #0C00D4;
             justify-content: center;
             align-items: center;
-        }
+        } */
+        /* .btn-next{
+            width: 170px;
+            padding: 10px;
+            color: #FFF;
+            background-color: #0C00D4;
+            justify-content: center;
+            align-items: center;
+        } */
 
         .aside {
             flex: 1;
             background-color: #333;
             color: #fff;
             padding: 20px;
+        }
+
+        /* 響應式: 延伸閱讀*/
+        @media screen and (max-width : 990px) {
+            .new-content{
+                margin: 0px 20px;
+            }
+
+        }
+
+        /* 響應式: 延伸閱讀*/
+        @media screen and (max-width : 990px) {
+            .read-more{
+                width: 100%;
+            }
+            .previous{
+                flex-shrink: 1;
+            }
+            .next{
+                flex-shrink: 1;
+            }
+        }
+
+        /* 響應式: 麵包屑*/
+        @media screen and (max-width : 990px) {
+            .aside {
+                display: none;
+            }
         }
 
 
@@ -129,7 +173,7 @@
             <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
             <li><a href="/article.html">最新消息</a></li>
             <li><img src="./img/icon-arrow-black.png" alt="" width="12"></li>
-            <li>文章標題文章標題文章標題文章標題文章標題文章標題文章標題</li>
+            <li>跑步瘦身有用嗎？教你正確的跑步姿勢與祕訣！</li>
           </ul>
         </div>
     </div>
@@ -143,28 +187,41 @@
                         <p class="article-category">健身知識</p>
                         <p class="article-time">2024-09-05</p>
                     </div>
-                    <h1 class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題文章標題</h1>
-                    <div class="article-paragraph">跑步作為一種簡單且容易上手的運動，已成為許多人瘦身、增強體能的首選。這篇文章將帶你深入了解跑步瘦身的科學依據，並介紹如何正確的跑步姿勢及實用的跑步小技巧，讓你在瘦身的路上事半功倍。</p>
-                    <div class="article-paragraph">一、跑步瘦身的科學基礎
-                        熱量消耗與卡路里赤字
-                        瘦身的核心在於熱量赤字，即每天消耗的熱量多於攝入的熱量。跑步屬於有氧運動，能幫助增加日常熱量消耗，進而促進脂肪燃燒。根據不同的體重、跑步速度及強度，跑步每小時可以消耗約300至600大卡，這樣的消耗對於減重的人來說十分有幫助。
-                        
-                        提高基礎代謝率
-                        經常進行跑步訓練還能提升基礎代謝率（BMR）。當身體習慣有規律的跑步訓練後，即使在休息狀態下也能消耗更多的熱量。這表示，透過規律的跑步可以讓你的身體自動燃燒更多脂肪，幫助保持理想體重。
-                        
-                        燃脂心率範圍
-                        想透過跑步更有效地燃燒脂肪，建議維持在60-70%最大心率的範圍內。這時候，身體以脂肪作為主要能量來源，效果最佳。可以用公式「220 - 年齡」計算自己的最大心率，再依此範圍設定跑步強度。</p>
+                    <h1 class="article-title">跑步瘦身有用嗎？教你正確的跑步姿勢與祕訣！</h1>
+                    <div class="article-paragraph">跑步作為一種簡單且容易上手的運動，已成為許多人瘦身、增強體能的首選。這篇文章將帶你深入了解跑步瘦身的科學依據，並介紹如何正確的跑步姿勢及實用的跑步小技巧，讓你在瘦身的路上事半功倍。</div>
+                    <div class="article-paragraph">
+                        <h2>一、跑步瘦身的科學基礎</h2>
+                        <h3>1、熱量消耗與卡路里赤字</h3>
+                        <p>瘦身的核心在於熱量赤字，即每天消耗的熱量多於攝入的熱量。跑步屬於有氧運動，能幫助增加日常熱量消耗，進而促進脂肪燃燒。根據不同的體重、跑步速度及強度，跑步每小時可以消耗約300至600大卡，這樣的消耗對於減重的人來說十分有幫助。</p>
+                        <h3>2、提高基礎代謝率</h3>
+                        <p>經常進行跑步訓練還能提升基礎代謝率（BMR）。當身體習慣有規律的跑步訓練後，即使在休息狀態下也能消耗更多的熱量。這表示，透過規律的跑步可以讓你的身體自動燃燒更多脂肪，幫助保持理想體重。</p>
+                        <h3>3、燃脂心率範圍</h3>
+                        <p>想透過跑步更有效地燃燒脂肪，建議維持在60-70%最大心率的範圍內。這時候，身體以脂肪作為主要能量來源，效果最佳。可以用公式「220 - 年齡」計算自己的最大心率，再依此範圍設定跑步強度。</p>
+                    </div>
+                    <div class="article-paragraph">
+                        <h2>二、正確的跑步姿勢</h2>
+                        <p>良好的跑步姿勢不僅能提高運動效率，也能減少受傷風險。以下是正確的跑步姿勢要點：</p>
+                        <h3>1、頭部與視線</h3>
+                        <p>保持頭部平穩，不要上下晃動，視線則應向前看約20米處，避免過度低頭或仰頭，這樣可以減少頸部與背部的壓力。</p>
+                        <h3>2、手臂擺動</h3>
+                        <p>雙臂自然彎曲約90度，並隨步伐前後擺動。擺動幅度應控制在前後而非左右，且手肘應保持輕鬆。手臂擺動可以帶動身體前進，增加步伐的動力。</p>
+                        <h3>3、軀幹穩定</h3>
+                        <p>保持上半身挺直，稍微向前傾約10度，不要過度彎腰駝背。核心肌群要稍微收緊，以增加軀幹的穩定性。</p>
+                        <h3>4、步幅與落腳</h3>
+                        <p>輕輕地用腳掌著地，避免用腳跟或腳尖過度著地，以減少對膝關節的壓力。步幅應保持自然，不宜過大，過大的步幅可能增加腿部壓力，容易導致疲勞和受傷。</p>
+                
+                    </div>
                 </div>
                 <div class="read-more flex">
                     <div class="previous flex spaceing-g12">
-                        <div class="btn-previous flex spaceing-g8">
+                        <div class="btn-further flex spaceing-g8">
                             <img src="./img/icon-arrow-white.png" alt=""  width="12">
                             <p>Previous</p>
                         </div>
                         <div class="previous-name">文章標題文章標題文章標題文章標題文章標題</div>
                     </div>
                     <div class="next flex spaceing-g12">
-                        <div class="btn-next flex spaceing-g8">
+                        <div class="btn-further flex spaceing-g8">
                             <p>Next</p>
                             <img src="./img/icon-arrow-white.png" alt=""  width="12">
                         </div>
