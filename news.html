@@ -82,6 +82,14 @@
             justify-content: center;
             align-items: center;
         }
+        .btn-further:hover{
+            width: 170px;
+            padding: 10px;
+            color: #000;
+            background-color: #FFEB3C;
+            justify-content: center;
+            align-items: center;
+        }
         /* .btn-previous{
             width: 170px;
             padding: 10px;
@@ -105,6 +113,39 @@
             color: #fff;
             padding: 20px;
         }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            }
+
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .search-input::placeholder {
+        color: #aaa;
+        }
+
+        .aside-title{
+            font-size: 24px;
+            margin: 16px 0px 8px 0px;
+        }
+
+        .category-title{
+            font-weight: 500;
+        }
+        .category-num{
+            font-size: 14px;
+            font-weight: 400;
+        }
+
 
         /* 響應式: 延伸閱讀*/
         @media screen and (max-width : 990px) {
@@ -227,7 +268,7 @@
                 <div class="read-more flex">
                     <div class="previous flex spaceing-g12">
                         <div class="btn-further flex spaceing-g8">
-                            <img src="./img/icon-arrow-white.png" alt=""  width="12">
+                            <img class="rotate-180" src="./img/icon-arrow-white.png" alt=""  width="12">
                             <p>Previous</p>
                         </div>
                         <div class="previous-name">文章標題文章標題文章標題文章標題文章標題</div>
@@ -243,7 +284,9 @@
             </div>
 
             <div class="aside">
-                <div class="search-box" placeholder="search"></div>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="search">
+                  </div>
                 <div class="aside-title">分類</div>
                 <div class="category-text flex">
                     <div class="category-title">場館公告</div>
