@@ -79,7 +79,10 @@ section{
 .rotate-180{
     transform: rotate(180deg);
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 /* header 導覽列選單 */
 .menu{
