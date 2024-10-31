@@ -21,39 +21,32 @@
             opacity: 0.8;
         }
 
+        /* 文章分類 */
         .category-list{
             width: 100%;
         }
         .category-item{
-            width: 1080px;
+            max-width: 1080px;
             margin: auto;
-            justify-content: flex-start;
+            justify-content: center;
         }
         .btn-category{
             color: #FFF;
             background-color: #0C00D4;
-            padding: 8px 48px;
+            padding: 8px 30px;
             cursor: pointer;
         }
         .btn-category:hover{
             color: #000;
             background-color: #FFEB3C;
-            padding: 8px 48px;
+            padding: 8px 30px;
         }
 
-
+        /* 文章列表 */
         .article-main{
             width: 100%;
         }
         .article-main-list{
-            width: 100%;
-            max-width: 1080px;
-            margin: auto;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-
-        .article-info-list{
             width: 100%;
             max-width: 1080px;
             margin: auto;
@@ -75,6 +68,7 @@
             font-size: 24px;
         }
 
+        /* 頁數切換 */
         .page-box{
             width: 100%;
         }
@@ -102,6 +96,15 @@
             border: 1px solid #B0B0B0;
         }
 
+        /* 響應式: 主軸 */
+        @media screen and (max-width : 990px) {
+            .article-main-list{
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
     </style>
 
 </head>
@@ -152,59 +155,53 @@
 
     <section class="article-main">
         <div class="article-main-list flex spaceing-g36">
-            <div class="article-info-list flex">
-                <div class="article-info flex spaceing-g8">
-                    <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
-                    <div class="article-addition flex">
-                        <p class="article-category">健身知識</p>
-                        <p class="article-time">2024-09-05</p>
-                    </div>
-                    <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
+                <div class="article-addition flex">
+                    <p class="article-category">健身知識</p>
+                    <p class="article-time">2024-09-05</p>
                 </div>
-                <div class="article-info flex spaceing-g8">
-                    <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
-                    <div class="article-addition flex">
-                        <p class="article-category">健身知識</p>
-                        <p class="article-time">2024-09-05</p>
-                    </div>
-                    <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
-                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
             </div>
-            <div class="article-info-list flex">
-                <div class="article-info flex spaceing-g8">
-                    <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
-                    <div class="article-addition flex">
-                        <p class="article-category">健身知識</p>
-                        <p class="article-time">2024-09-05</p>
-                    </div>
-                    <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
+                <div class="article-addition flex">
+                    <p class="article-category">健身知識</p>
+                    <p class="article-time">2024-09-05</p>
                 </div>
-                <div class="article-info flex spaceing-g8">
-                    <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
-                    <div class="article-addition flex">
-                        <p class="article-category">健身知識</p>
-                        <p class="article-time">2024-09-05</p>
-                    </div>
-                    <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
-                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
             </div>
-            <div class="article-info-list flex">
-                <div class="article-info flex spaceing-g8">
-                    <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
-                    <div class="article-addition flex">
-                        <p class="article-category">健身知識</p>
-                        <p class="article-time">2024-09-05</p>
-                    </div>
-                    <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
+                <div class="article-addition flex">
+                    <p class="article-category">健身知識</p>
+                    <p class="article-time">2024-09-05</p>
                 </div>
-                <div class="article-info flex spaceing-g8">
-                    <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
-                    <div class="article-addition flex">
-                        <p class="article-category">健身知識</p>
-                        <p class="article-time">2024-09-05</p>
-                    </div>
-                    <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
+                <div class="article-addition flex">
+                    <p class="article-category">健身知識</p>
+                    <p class="article-time">2024-09-05</p>
                 </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
+                <div class="article-addition flex">
+                    <p class="article-category">健身知識</p>
+                    <p class="article-time">2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
+            </div>
+            <div class="article-info flex spaceing-g8">
+                <div class="article-img"><img src="./img/article-info-01.jpg" alt=""></div>
+                <div class="article-addition flex">
+                    <p class="article-category">健身知識</p>
+                    <p class="article-time">2024-09-05</p>
+                </div>
+                <div class="article-title">文章標題文章標題文章標題文章標題文章標題文章標題</div>
             </div>
         </div>
     </section>
