@@ -7,435 +7,19 @@
     <title>健康參盒，加你就適合！｜健身首選</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./js/scripts.js">
+
+    <!-- 引入 font-awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     
     <!-- 引入 Google Font 字體 : Noto Sans TC, Noto Serif TC, Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-        .banner{
-            width: 100%;
-            height: 400px;
-            background-color: #9e9e9e;
-        }
 
-
-        /* 主畫面區塊 */
-        .main-area{
-            width: 100%;
-            max-width: 1080px;
-            margin: auto;
-        }
-
-        .main-area-content{
-            max-width: 600px;
-            position: relative;
-            top: 50px;
-            left: 89px;
-            flex-wrap: wrap;
-        }
-
-        .main-area-content > h1{
-            font-size: 64px;
-            line-height: 72px;
-            margin-bottom: 30px;
-            color: #FFF;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        .main-area-content > p{
-            width: 450px;
-            font-size: 24px;
-        }
-
-        /* .main-img{
-            width: 500px;
-        } */
-
-
-        /* 引言區塊 */
-        hr{
-            width: 80%;
-            border: 1px solid #000;
-        }
-
-        .foreword > h2{
-            text-align: center;
-            line-height: 64px;
-            font-size: 36px;
-            font-family: 'Noto Serif TC';
-        }
-
-
-        /* 首頁共用 */
-        .bg-item{
-          position: relative;
-          width: 100%;
-          top: 100px;
-        }
-        .list{
-            max-width: 1080px;
-            align-items: center;
-        }
-
-        /* 首頁課程區塊 */
-        .bg-item-course {
-          height: 1150px;
-          transform: skewY(-3deg);
-          background-color: #D6D6D6;
-        }
-        
-        .bg-item-course .course-list {
-          transform: skewY(3deg);
-          width: 100%;
-          max-width: 1080px;
-          top: 20px;
-          position: relative;
-          margin: auto;
-        }
-
-        .course-img{
-            width: 330px;
-            height: 366px;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .course-img .desc {
-            position: absolute;
-            bottom: -50px;
-            left: 0;
-            right: 0;
-            background-color: #0C00D4;
-            color: white;
-            padding: 10px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .course-img .desc {
-            transition: bottom 0.5s;
-        }
-
-        .course-img:hover .desc {
-            bottom: 0;
-        }
-
-        .col{
-            width: 336px;
-            flex-wrap: wrap;
-        }
-
-        .col-middle{
-            position: relative;
-            top: 50px;
-        }
-       
-        .col-right{
-            position: relative;
-            top: 100px;
-        }
-
-        /* 首頁各標題區塊 */
-        .main-title{
-            flex-direction: column;
-        }
-
-        .main-title-right{
-            align-items: flex-end;
-            margin-bottom: 20px;
-        }
-
-        .main-title > h1{
-            font-size: 96px;
-        }
-
-        .main-title > p{
-            font-size: 36px;
-        }
-
-
-        /* 首頁文章區塊 */
-        .bg-item-article {
-            height: 550px;
-            transform: skewY(3deg);
-            background-color: #D6D6D6;
-        }
-
-        .bg-item-article .article-list {
-          transform: skewY(-3deg);
-          width: 100%;
-          max-width: 1080px;
-          top: 20px;
-          position: relative;
-          margin: auto;
-        }
-
-        .main-title-left{
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        .article-card{
-            width: 240px;
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-            margin-bottom: 12px;
-        }
-
-        .article-card-img{
-            width: 240px;
-            height: 160px;
-        }
-
-
-        /* 首頁圓形按鈕 */
-        .more{
-            max-width: 1080px;
-            margin: auto;
-        }
-        .more-left{
-            display: flex;
-            justify-content: flex-start;
-        }
-        .more-right{
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .more-text{
-            z-index: 800;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .btn-more{
-            width: 160px;
-            height: 160px;
-            border-radius: 160px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 800;
-            cursor: pointer;
-        }
-
-
-        .btn-more-default{
-            background-color: #0C00D4;
-            color:#FFF;
-        }
-
-        .btn-more-default:hover{
-            width: 300px;
-            background-color: #FFEB3C;
-            color:#000;
-        }
-
-        /* 首頁方案區塊 */
-        .plan{
-            width: 100%;
-            align-items: center;
-        }
-
-        .plan-card{
-            width: 240px;
-            height: 415px;
-            border-radius: 10px;
-            background-color: #99B3E8;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .plan-list{
-            width: 100%;
-            max-width: 1080px;
-            margin: auto;
-        }
-
-        .plan-card > p{
-            font-size:32px;
-        }
-
-
-        /* 首頁CTA區塊 */
-        .cta{
-            background-image: url(./img/bg-cta-gym.png);
-            width: 100%;
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            padding: 10px;
-        }
-
-        .cta-item{
-            max-width: 550px;
-            margin: auto;
-            flex-direction: column;
-        }
-        .cta-item > h2{
-            font-size: 48px;
-        }
-
-        .cta-text{
-            align-self: stretch;
-        }
-        .cta-text > p{
-            font-size: 32px;
-            font-weight: 700;
-        }
-        .btn-cta{
-            width: 260px;
-            height: 50px;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .btn-cta-default{
-            background-color: #0C00D4;
-            color:#FFF;
-        }
-        .btn-cta-default:hover{
-            background-color: #FFEB3C;
-            color:#000;
-        }
-        
-
-
-        /* 響應式: 主軸 */
-        @media screen and (max-width : 990px) {
-            .main-area{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .main-area-content{
-                margin: 0px 50px;
-                top: 50px;
-                left: 0px;
-            }
-            
-            .main-area-content > h1{
-                font-size: 36px;
-                line-height: 48px;
-            }
-            
-            .main-area-content > p{
-                width: 100%;
-                font-size: 20px;
-            }
-
-        }
-
-        /* 響應式: course區塊 */
-        @media screen and (max-width : 990px) {
-            .bg-item-course {
-                height: 2750px;
-                transform: skewY(-3deg);
-                background-color: #D6D6D6;
-                }
-                
-            .bg-item-course .course-list {
-                transform: skewY(3deg);
-                width: 100%;
-                max-width: 1080px;
-                top: 20px;
-                position: relative;
-                margin: auto;
-            }
-
-            .list{
-                align-items: center;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-
-        }
-
-
-        /* 響應式: 標題區塊 */
-        @media screen and (max-width : 990px) {
-            .main-title{
-                flex-direction: column;
-            }
-            .main-title-right{
-                align-items: center;
-            }
-            .main-title-left{
-                align-items: center;
-            }
-            .main-title > h1{
-                font-size: 72px;
-            }
-            .main-title > p{
-                font-size: 32px;
-            }
-        }
-
-
-
-        /* 響應式: article區塊 */
-        @media screen and (max-width : 990px) {
-            .bg-item-article {
-                height: 1240px;
-                transform: skewY(3deg);
-                background-color: #D6D6D6;
-            }
-
-            .bg-item-article .article-list {
-                transform: skewY(-3deg);
-                width: 100%;
-                max-width: 1080px;
-                top: 20px;
-                position: relative;
-                margin: auto;
-            }
-
-        }
-        
-        /* 響應式: more按鈕區塊 */
-        @media screen and (max-width : 990px) {
-            .more{
-                max-width: 1080px;
-                margin: auto;
-            }
-            .more-left{
-                display: flex;
-                justify-content: center;
-            }
-            .more-right{
-                display: flex;
-                justify-content: center;
-            }
-
-        }
-
-        /* 響應式: CTA區塊 */
-        @media screen and (max-width : 990px) {
-            .cta{
-                height: 320px;
-            }
-            .cta-item{
-                text-align: center;
-            }
-            .cta-text{
-                flex-direction: column;
-                flex-wrap: wrap;
-                gap: 12px;
-            }
-            .btn-cta{
-                margin: auto;
-            }
-        }
-
-
-    </style>
 </head>
 <body>
     <header>
@@ -460,8 +44,17 @@
         </div>
     </header>
 
-    <div class="banner"></div>
-    
+    <div class="banner-container">
+        <div class="banner-images" id="carouselImages">
+          <img src="./img/home-banner01.jpg" alt="Image 1">
+          <img src="./img/home-banner02.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-buttons">
+          <button><i class="fa fa-arrow-left"></i></button>
+          <button><i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
+
     <section>
         <div class="main-area flex">
             <div class="main-area-content left">
@@ -582,17 +175,17 @@
                 <p>方案選擇</p>
                 <h1>Four You</h1>
             </div>
-            <div class="list flex">
-                <div class="plan-card spaceing-g12">
-                    <p>單堂</p>
-                    <hr>
+            <div class="list flex spaceing-g24">
+                <div class="plan-card flex">
+                    <p>單堂<hr></p>
+                    
                     <ul>
                         <li>1</li>
                         <li>2</li>
                     </ul>
                     <p>$999</p>
                 </div>
-                <div class="plan-card spaceing-g12">
+                <div class="plan-card flex spaceing-g12">
                     <p>月票</p>
                     <hr>
                     <ul>
@@ -601,21 +194,21 @@
                     </ul>
                     <p>$1,999</p>
                 </div>
-                <div class="plan-card spaceing-g12">
+                <div class="plan-card flex spaceing-g12">
                     <p>季票</p>
                     <hr>
                     <ul>
                         <li>1</li>
-                        <li>2</li>
+                        <li>20堂1對1健身教練課</li>
                     </ul>
                     <p>$3,999</p>
                 </div>
-                <div class="plan-card spaceing-g12">
+                <div class="plan-card flex spaceing-g12">
                     <p>年票</p>
                     <hr>
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
+                        <li>無限次使用健身房</li>
+                        <li>52堂1對1健身教練課</li>
                     </ul>
                     <p>$12,999</p>
                 </div>
