@@ -7,7 +7,12 @@
     <title>預約體驗</title>
 
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 引入 font-awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+
     <!-- 引入 Google Font 字體 : Noto Sans TC, Noto Serif TC, Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +26,15 @@
             opacity: 0.8;
         }
 
-        .form-area{
+        .form-container{
             width: 100%;
+        }
+
+        .form-area{
             max-width: 1080px;
             margin: auto;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .form-sop{
@@ -39,19 +48,16 @@
             flex-direction: column;
             align-items: center;
         }
-        .sop-img{
-            width: 150px;
-            height: 150px;
-            border-radius: 150px;
-            background-color: #CCC;
-        }
 
         h2.form-title{
             margin-bottom: 50px;
         }
+
         .form-content{
             flex-direction: column;
+            gap: 48px;
         }
+
         .form-text{
             flex-direction: column;
         }
@@ -76,9 +82,23 @@
         }
         .btn-send-default{
             background-color: #0C00D4;
-            
             color:#FFF;
         }
+
+        /* 響應式: 標題區塊 */
+        @media screen and (max-width : 990px) {
+            .form{
+                margin: 0px 20px;
+            }
+
+        }
+        @media screen and (max-width : 450px) {
+            .form-content{
+                gap: 12px;
+            }
+        }
+
+
 
     </style>
 </head>
@@ -120,51 +140,52 @@
         </div>
     </div>
 
-    <section class="form-area flex">
-        <div class="form-sop left">
-            <div class="sop-step flex spaceing-g24">
-                <div class="sop-step-text flex spaceing-g12">
-                    <div class="sop-img"></div>
-                    <p>填寫表單</p>
-                </div>
-                <img src="./img/icon-arrow-down.png" alt="" width="24">
-                <div class="sop-step-text flex spaceing-g12">
-                    <div class="sop-img"></div>
-                    <p>聯繫確認</p>
-                </div>
-                <img src="./img/icon-arrow-down.png" alt="" width="24">
-                <div class="sop-step-text flex spaceing-g12">
-                    <div class="sop-img"></div>
-                    <p>兌換課程</p>
+    <section class="form-container">
+        <div class="form-area flex spaceing-g48">
+            <div class="form-sop">
+                <div class="sop-step flex spaceing-g24">
+                    <div class="sop-step-text flex spaceing-g12">
+                        <div class="sop-img"><img src="./img/form-sop-img01.png" alt=""></div>
+                        <p>填寫表單</p>
+                    </div>
+                    <i class="fa fa-arrow-down"></i>
+                    <div class="sop-step-text flex spaceing-g12">
+                        <div class="sop-img"><img src="./img/form-sop-img02.png" alt=""></div>
+                        <p>聯繫確認</p>
+                    </div>
+                    <i class="fa fa-arrow-down"></i>
+                    <div class="sop-step-text flex spaceing-g12">
+                        <div class="sop-img"><img src="./img/form-sop-img03.png" alt=""></div>
+                        <p>兌換課程</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="form right">
-            <h2 class="form-title">｜立即填表｜免費贈1對1教練課程乙堂｜</h2>
-            <div class="form-content flex spaceing-g48">
-                <div class="form-text flex spaceing-g8">
-                    <label for="name">姓名 *</label>
-                    <input type="text" id="name" placeholder="請輸入姓名" />
-                </div>
-                <div class="form-text flex spaceing-g8">
-                    <label for="phone-number">聯絡電話 *</label>
-                    <input type="text" id="phone-number" placeholder="請輸入電話 ex. 0911222333" />
-                </div>
-                <div class="form-text flex spaceing-g8">
-                    <label for="email">電子郵件 *</label>
-                    <input type="text" id="email" placeholder="請輸入電子郵件 ex. best@a.com" />
-                </div>
-                <div class="form-text flex spaceing-g8">
-                    <label for="remark">備註</label>
-                    <input type="text" id="remark" placeholder="備註" />
-                </div>
-                <div class="send">
-                    <div class="btn-send btn-send-default">送出資料</div>
+            <div class="form">
+                <h2 class="form-title">｜立即填表｜免費贈1對1教練課程乙堂</h2>
+                <div class="form-content flex">
+                    <div class="form-text flex spaceing-g8">
+                        <label for="name">姓名 *</label>
+                        <input type="text" id="name" placeholder="請輸入姓名" />
+                    </div>
+                    <div class="form-text flex spaceing-g8">
+                        <label for="phone-number">聯絡電話 *</label>
+                        <input type="text" id="phone-number" placeholder="請輸入電話 ex. 0911222333" />
+                    </div>
+                    <div class="form-text flex spaceing-g8">
+                        <label for="email">電子郵件 *</label>
+                        <input type="text" id="email" placeholder="請輸入電子郵件 ex. best@a.com" />
+                    </div>
+                    <div class="form-text flex spaceing-g8">
+                        <label for="remark">備註</label>
+                        <input type="text" id="remark" placeholder="備註" />
+                    </div>
+                    <div class="send">
+                        <div class="btn-send btn-send-default">送出資料</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
     </section>
 
 
