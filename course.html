@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="健身房首選Be Strong">
+    <meta name="description" content="課程一覽">
     <title>課程一覽</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <!-- 引入 Google Font 字體 : Noto Sans TC, Noto Serif TC, Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,25 +24,33 @@
         .course-main{
             width: 100%;
         }
+
         .course-item-list{
-            flex-direction: column;
-        }
-        .course-item{
             max-width: 1080px;
             margin: auto;
+            flex-direction: column;
         }
 
-        .course-page-img{
-            width: 400px;
-            height: 400px;
-            background-color: #D9D9D9;
+        .course-item{
+            margin-bottom: 20px;
         }
+
         .course-text{
             display: flex;
-            width: 587px;
+            flex: 5;
             flex-direction: column;
+            justify-content: center;
+        }
+
+        .course-text > p{
+            line-height: 2;
+            text-align: justify;
+        }
+
+        .btn-course{
             justify-content: flex-end;
         }
+
         .btn-course-reserve{
             width: 260px;
             height: 50px;
@@ -62,6 +70,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+
+        /* 響應式: 主軸 */
+        @media screen and (max-width : 990px) {
+            .course-item-list{
+                margin: 0px 20px;
+            }
+
+            .course-item{
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                gap: 32px;
+            }
+
+            .course-item-re{
+                flex-wrap: wrap-reverse;
+            }
+
         }
 
         hr{
@@ -172,21 +200,45 @@
 
     <section class="course-main">
         <div class="course-item-list flex spaceing-g36">
-            <div class="course-item flex spaceing-g24">
-                <div class="course-page-img">圖片</div>
-                <div class="course-text spaceing-g24">
-                    <h2>課程名稱</h2>
-                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
-                    <div class="btn-course-reserve">立即預約體驗</div>
+            <div class="course-item flex spaceing-g36">
+                <div class="course-page-img"><img src="./img/course-img01.jpg" alt=""></div>
+                <div class="course-text flex spaceing-g24">
+                    <h2>基礎瑜珈</h2>
+                    <p>瑜珈課程旨在通過緩和的動作和專注的呼吸，提升身心的靈活性、力量和專注力。適合各種年齡層及不同運動經驗的學員，不論是初學者還是有經驗的瑜珈愛好者，都可以根據自身的能力調整姿勢並達到良好的效果。課程通常涵蓋基本體位，以及呼吸控制和冥想技巧，幫助學員釋放壓力、平衡情緒，增強內在的平靜感。</p>
+                    <div class="btn-course flex">
+                        <div class="btn-course-reserve">立即預約體驗</div>
+                    </div>
                 </div>
             </div>
-            <div class="course-item flex spaceing-g24">
-                <div class="course-page-img">圖片</div>
-                <div class="course-text spaceing-g24">
-                    <h2>課程名稱</h2>
-                    <p>課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明課程說明</p>
-                    <div class="btn-course-reserve">立即預約體驗</div>
+            <div class="course-item flex spaceing-g36 course-item-re">
+                <div class="course-text flex spaceing-g24">
+                    <h2>皮拉提斯</h2>
+                    <p>皮拉提斯的動作主要針對核心區域，包含腹部、下背部、臀部等，幫助穩定身體並增強支撐力。課程中常會使用到輔助器材，如彈力帶、瑜珈球和專業的皮拉提斯設備，以達到更精確的動作訓練效果。課程可以分為地板課程與器械課程，地板課程多以身體自重訓練為主，而器械課程則利用彈簧的阻力進行更深層的肌群訓練。</p>
+                    <div class="btn-course flex">
+                        <div class="btn-course-reserve">立即預約體驗</div>
+                    </div>
                 </div>
+                <div class="course-page-img"><img src="./img/course-img02.jpg" alt=""></div>
+            </div>
+            <div class="course-item flex spaceing-g36">
+                <div class="course-page-img"><img src="./img/course-img03.jpg" alt=""></div>
+                <div class="course-text spaceing-g24">
+                    <h2>燃脂飛輪</h2>
+                    <p>飛輪課程是一種高強度、有氧與力量結合的室內自行車訓練。通常在專業教練指導下進行，並搭配音樂節奏引導學員進行變速、變坡等模擬真實騎行體驗的訓練。以快慢結合的騎行方式，能夠有效燃燒脂肪、提升心肺功能，並且增強腿部及核心肌群力量。此外，飛輪課程富有社群性，學員在課堂中相互激勵形成團體動力。</p>
+                    <div class="btn-course flex">
+                        <div class="btn-course-reserve">立即預約體驗</div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-item flex spaceing-g36 course-item-re">
+                <div class="course-text flex spaceing-g24">
+                    <h2>核心訓練</h2>
+                    <p>核心訓練是一種專注於強化核心肌群的訓練方式，核心肌群包括腹部、下背部、骨盆以及臀部周圍的肌肉，這些部位對於維持身體穩定和平衡至關重要。核心訓練通過各種針對性的動作，例如平板支撐、俄羅斯轉體及仰臥起坐等，透過專屬 1 對 1 教練的帶領，幫助提升核心力量，改善訓練姿勢，並預防運動傷害。</p>
+                    <div class="btn-course flex">
+                        <div class="btn-course-reserve">立即預約體驗</div>
+                    </div>
+                </div>
+                <div class="course-page-img"><img src="./img/course-img04.jpg" alt=""></div>
             </div>
         </div>
     </section>
