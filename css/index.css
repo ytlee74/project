@@ -261,11 +261,14 @@ hr{
     width: 240px;
     height: 415px;
     border-radius: 10px;
-    background-color: #99B3E8;
+    background-color: #FFF;
+    border: 5px solid #FFEB3C;
+    box-shadow: 5px 5px #0C00D4;
     flex-direction: column;
     align-items: center;
     padding: 20px ;
 }
+
 .plan-list{
     width: 100%;
     max-width: 1080px;
