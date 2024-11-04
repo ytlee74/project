@@ -141,8 +141,8 @@ hr{
 }
 
 .col{
-    width: 336px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .col-middle{
@@ -343,13 +343,13 @@ hr{
         width: 100%;
         font-size: 20px;
     }
-
 }
+
 
 /* 響應式: course區塊 */
 @media screen and (max-width : 990px) {
     .bg-item-course {
-        height: 2750px;
+        height: 1500px;
         transform: skewY(-3deg);
         background-color: #D6D6D6;
         }
@@ -370,9 +370,26 @@ hr{
         flex-wrap: wrap;
         /* margin: 0 20px; */
     }
-
 }
 
+/* 響應式: course區塊 */
+@media (min-width: 320px) and (max-width: 690px) {
+    .bg-item-course {
+        height: 2750px;
+        transform: skewY(-3deg);
+        background-color: #D6D6D6;
+        }
+        
+    .bg-item-course .course-list {
+        transform: skewY(3deg);
+        width: 100%;
+        max-width: 1080px;
+        top: 20px;
+        position: relative;
+        margin: auto;
+    }
+
+}
 
 /* 響應式: 標題區塊 */
 @media screen and (max-width : 990px) {

@@ -22,14 +22,6 @@ p{
     font-weight: 500;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    background-color: #FFF;
-    opacity: 1;
-    z-index: 999;
-}
-
 section{
     margin: 50px 0px;
 }
@@ -85,6 +77,14 @@ img{
 }
 
 /* header 導覽列選單 */
+header{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    opacity: 1;
+    z-index: 999;
+}
+
 .menu{
     width: 100%;
     max-width: 1080px;
@@ -107,7 +107,7 @@ nav ul li{
     font-weight: 500;
 }
 nav ul li a{
-    color:#000;
+    color:#FFF;
     text-decoration: none;
 }
 
@@ -117,7 +117,7 @@ nav ul li:hover{
 }
 
 nav ul li a:hover{
-    color: #0C00D4;
+    color: #FFEB3C;
     text-decoration: none;
 }
 
