@@ -149,6 +149,7 @@ nav ul li a:hover{
 }
 .breadcrumb{
     justify-content: flex-start;
+    align-items: center;
 }
 .breadcrumb li a{
     text-decoration: none;
