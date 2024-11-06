@@ -95,7 +95,7 @@ header{
 }
 
 nav{
-    width: 600px;
+    width: 550px;
 }
 
 ul{
@@ -120,6 +120,32 @@ nav ul li:hover{
 nav ul li a:hover{
     color: #FFEB3C;
     text-decoration: none;
+}
+
+/* 漢堡選單 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+ }
+
+.hamburger span{
+    width: 20px;
+    height: 2px;
+    background-color: #FFF;
+    margin: 2px 0;
+    transform-origin: left;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.hamburger.active span:nth-child(1){
+    transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3){
+    transform: rotate(-45deg);
 }
 
 
@@ -212,9 +238,36 @@ footer{
     color: #FFF;
 }
 
+/* 手機斷點 */
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: flex;
+    } 
+    .navlist {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height:calc(100vh - 80px);
+        /* 要減去nav的高度 */
+        top: 80px;
+        left: 0;
+        background-color: #393939;
+        display: none;
+        /* 手機選單要消失 */
+        justify-content: center;
+        align-items: center;
+    }
+    .navlist.active {
+        display: flex;
+        /* 按下去之後選單要出現 */
+    }
+    .navlist li {
+        margin: 20px;
+    }
+}
 
-/* 響應式: 選單header */
-@media screen and (max-width : 990px) {
+/* 響應式: 選單header
+@media screen and (max-width : 768px) {
     nav{
         display: none;
     }
@@ -224,7 +277,7 @@ footer{
     .mobile-menu ul{
         justify-content: flex-end;
     }   
-}
+} */
 
 /* 響應式: 麵包屑*/
 @media screen and (max-width : 768px) {
