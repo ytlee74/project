@@ -1,0 +1,161 @@
+.page-banner-news{
+    background-image: url(../img/news-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+.news-post{
+    width: 100%;
+}
+.new-content{
+    margin: auto;
+    max-width: 1080px;
+}
+
+/* .main-article-post{
+    flex: 5;
+} */
+
+.post-content{
+    max-width: 840px;
+    flex-direction: column;
+}
+.article-addition .article-category{
+    color:#FFF;
+    background-color: #0C00D4;
+    padding: 5px 10px;
+}
+h1.article-title{
+    font-size: 36px;
+}
+
+.article-paragraph{
+    margin: 5px 0px;
+}
+
+.article-paragraph h2,h3{
+    line-height: 2;
+}
+
+.article-paragraph p{
+    font-weight: 400;
+}
+
+/* 延伸閱讀 */
+.read-more{
+    max-width: 840px;
+    margin: 100px 0px 0px 0px;
+}
+.previous{
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+.next{
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.btn-further{
+    width: 120px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #0C00D4;
+    justify-content: center;
+    align-items: center;
+}
+.btn-further:hover{
+    width: 120px;
+    padding: 10px;
+    color: #000;
+    background-color: #FFEB3C;
+    justify-content: center;
+    align-items: center;
+}
+/* .btn-previous{
+    width: 170px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #0C00D4;
+    justify-content: center;
+    align-items: center;
+} */
+/* .btn-next{
+    width: 170px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #0C00D4;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* 側邊欄 */
+.aside {
+    /* flex: 1; */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    }
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+}
+
+.search-input::placeholder {
+color: #aaa;
+}
+
+.aside-title{
+    font-size: 24px;
+    margin: 16px 0px 8px 0px;
+}
+
+.category-title{
+    font-weight: 500;
+}
+.category-num{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* 響應式: 延伸閱讀*/
+@media screen and (max-width : 768px) {
+    .new-content{
+        margin: 0px 20px;
+    }
+}
+
+/* 響應式: 延伸閱讀*/
+@media screen and (max-width : 768px) {
+    .read-more{
+        width: 100%;
+    }
+    .previous{
+        flex-shrink: 1;
+    }
+    .next{
+        flex-shrink: 1;
+    }
+}
+
+/* 響應式: 麵包屑*/
+@media screen and (max-width : 768px) {
+    .aside {
+        display: none;
+    }
+}
