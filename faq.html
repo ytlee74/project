@@ -6,7 +6,17 @@
     <meta name="description" content="健身房首選Be Strong">
     <title>常見問題</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/faq.css">
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/top.scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 引入 font-awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     
     <!-- 引入 Google Font 字體 : Noto Sans TC, Noto Serif TC, Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +25,85 @@
 
     <style>
         .page-banner-faq{
-            background-image: url(./img/banner-img01.png);
+            background-image: url(./img/faq-banner.jpg);
             background-size: cover;
             background-position: center;
-            opacity: 0.8;
+            /* opacity: 0.8; */
         }
+        .faq-main{
+            width: 100%;
+        }
+        .faq-area{
+            max-width: 1080px;
+            margin: auto;
+        }
+
+        /* 側邊欄 */
+        .faq-aside {
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .aside-title{
+            font-size: 24px;
+            margin: 16px 0px 8px 0px;
+        }
+
+        .category-list{
+            flex-direction: column;
+        }
+        .category-text{
+            padding: 5px 0;
+        }
+        .faq-content{
+            flex: 5;
+            flex-direction: column;
+        }
+        .qa-title{
+            align-items: center;
+            background-color: #888888;
+            color: #fff;
+            padding: 10px ;
+            cursor: pointer;
+        }
+
+        .qa-answer{
+            /* display: none; */
+            padding: 20px 5px;
+        }
+
+        .btn-open-icon{
+            width: 30px;
+            height: 30px;
+            color:#FFF;
+            background-color: #0C00D4;
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+        }
+        .btn-open-icon:hover{
+            width: 30px;
+            height: 30px;
+            color:#000;
+            background-color: #FFEB3C;
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+
+        /* 響應式: QA */
+        @media screen and (max-width : 1024px) {
+            .faq-area{
+                margin: 0 20px;
+            }
+        }
+
+
+
+        
         </style>
 </head>
 <body>
@@ -59,6 +143,40 @@
           </ul>
         </div>
     </div>
+
+
+    <section class="faq-main">
+        <div class="faq-area flex spaceing-g24">
+            <div class="faq-aside">
+                <div class="aside-title">分類</div>
+                <div class="category-list flex">
+                    <div class="category-text">廠館須知</div>
+                    <div class="category-text">課程預約</div>
+                </div>
+            </div>
+
+
+            <div class="faq-content flex spaceing-g12">
+                <div class="faq-question">
+                    <div class="qa-title flex">
+                        <p>我想要免費體驗可以嗎？</p>
+                    </div>
+                    <div class="qa-answer">
+                        <p>當然可以！可於官網預約或電洽各分店，我們將盡快為您安排。</p>
+                    </div>
+                </div>
+                <div class="faq-question">
+                    <div class="qa-title flex">
+                        <p>我想要免費體驗可以嗎？</p>
+                    </div>
+                    <div class="qa-answer">
+                        <p>當然可以！可於官網預約或電洽各分店，我們將盡快為您安排。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <footer>
         <div class="footer-info">
