@@ -7,6 +7,11 @@
     <title>課程一覽</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/course.css">
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/top.scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <!-- 引入 font-awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
@@ -16,156 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-        <style>
-        .page-banner-course{
-            background-image: url(./img/course-banner.jpg);
-            background-size: cover;
-            background-position: center;
-            opacity: 0.8;
-        }
-
-        .course-main{
-            width: 100%;
-        }
-
-        .course-item-list{
-            max-width: 1080px;
-            margin: auto;
-            flex-direction: column;
-        }
-
-        .course-item{
-            margin-bottom: 20px;
-        }
-
-       
-        .course-text{
-            display: flex;
-            flex: 2;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .course-text > p{
-            line-height: 2;
-            text-align: justify;
-        }
-
-        .btn-course{
-            justify-content: flex-end;
-        }
-
-        .btn-course-reserve{
-            width: 260px;
-            height: 50px;
-            color: #fff;
-            background-color: #0C00D4;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .btn-course-reserve:hover{
-            width: 260px;
-            height: 50px;
-            color: #000;
-            background-color: #FFEB3C;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        /* 響應式: 主軸 */
-        @media screen and (max-width : 990px) {
-            .course-item-list{
-                margin: 0px 20px;
-            }
-
-            .course-item{
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-bottom: 20px;
-                gap: 32px;
-            }
-
-            .course-item-re{
-                flex-wrap: wrap-reverse;
-            }
-        }
-
-        hr{
-            width: 80%;
-            border: 1px solid #000;
-        }
-
-        .foreword > h2{
-            text-align: center;
-            line-height: 64px;
-            font-size: 36px;
-            font-family: 'Noto Serif TC';
-        }
-
-
-        
-        .curriculum{
-            width: 100%;
-        }
-        .curriculum-list{
-            max-width: 1080px;
-            margin: auto;
-            margin-bottom: 50px;
-        }
-
-        .curriculum-name{
-            align-items: center;
-        }
-
-        .curriculum-name > h2{
-            font-size: 32px;
-        }
-
-        .curriculum-month-select{
-            color: #fff;
-            background-color: #0C00D4;
-            padding: 5px 20px;
-            
-        }
-
-        .curriculum-week-select{
-            align-items: center;
-        }
-
-        .curriculum-table{
-            max-width: 1080px;
-            margin: auto;
-        }
-
-
-        table {
-            width: 100%;
-            letter-spacing: 1px;
-            border-spacing: 10px;
-            text-align: center;
-            
-        }
-
-        td,th {
-            padding: 30px 0px;
-            border: 1px solid #D9D9D9;
-        }
-
-        th {
-            background-color: rgb(235, 235, 235);
-        }
-        .week-list{
-            color:#000;
-            background-color: #D6D6D6;
-        }
-
-        </style>
 
 </head>
 <body>
@@ -206,6 +61,13 @@
         </div>
     </div>
 
+    
+    <section class="foreword">
+        <hr>
+        <h2>課程熱烈預約中，一起加入健身參盒</h2>
+        <hr>
+    </section>
+
     <section class="course-main">
         <div class="course-item-list flex spaceing-g36">
             <div class="course-item flex spaceing-g36">
@@ -214,7 +76,7 @@
                     <h2>基礎瑜珈</h2>
                     <p>瑜珈課程旨在通過緩和的動作和專注的呼吸，提升身心的靈活性、力量和專注力。適合各種年齡層及不同運動經驗的學員，不論是初學者還是有經驗的瑜珈愛好者，都可以根據自身的能力調整姿勢並達到良好的效果。課程通常涵蓋基本體位，以及呼吸控制和冥想技巧，幫助學員釋放壓力、平衡情緒，增強內在的平靜感。</p>
                     <div class="btn-course flex">
-                        <div class="btn-course-reserve">立即預約體驗</div>
+                        <a class="btn-course-reserve" href="./reserve.html" target="_blank">立即預約體驗</a>
                     </div>
                 </div>
             </div>
@@ -223,7 +85,7 @@
                     <h2>皮拉提斯</h2>
                     <p>皮拉提斯的動作主要針對核心區域，包含腹部、下背部、臀部等，幫助穩定身體並增強支撐力。課程中常會使用到輔助器材，如彈力帶、瑜珈球和專業的皮拉提斯設備，以達到更精確的動作訓練效果。課程可以分為地板課程與器械課程，地板課程多以身體自重訓練為主，而器械課程則利用彈簧的阻力進行更深層的肌群訓練。</p>
                     <div class="btn-course flex">
-                        <div class="btn-course-reserve">立即預約體驗</div>
+                        <a class="btn-course-reserve" href="./reserve.html" target="_blank">立即預約體驗</a>
                     </div>
                 </div>
                 <div class="course-page-img"><img src="./img/course-img02.jpg" alt=""></div>
@@ -234,7 +96,7 @@
                     <h2>燃脂飛輪</h2>
                     <p>飛輪課程是一種高強度、有氧與力量結合的室內自行車訓練。通常在專業教練指導下進行，並搭配音樂節奏引導學員進行變速、變坡等模擬真實騎行體驗的訓練。以快慢結合的騎行方式，能夠有效燃燒脂肪、提升心肺功能，並且增強腿部及核心肌群力量。此外，飛輪課程富有社群性，學員在課堂中相互激勵形成團體動力。</p>
                     <div class="btn-course flex">
-                        <div class="btn-course-reserve">立即預約體驗</div>
+                        <a class="btn-course-reserve" href="./reserve.html" target="_blank">立即預約體驗</a>
                     </div>
                 </div>
             </div>
@@ -243,7 +105,7 @@
                     <h2>核心訓練</h2>
                     <p>核心訓練是一種專注於強化核心肌群的訓練方式，核心肌群包括腹部、下背部、骨盆以及臀部周圍的肌肉，這些部位對於維持身體穩定和平衡至關重要。核心訓練通過各種針對性的動作，例如平板支撐、俄羅斯轉體及仰臥起坐等，透過專屬 1 對 1 教練的帶領，幫助提升核心力量，改善訓練姿勢，並預防運動傷害。</p>
                     <div class="btn-course flex">
-                        <div class="btn-course-reserve">立即預約體驗</div>
+                        <a class="btn-course-reserve" href="./reserve.html" target="_blank">立即預約體驗</a>
                     </div>
                 </div>
                 <div class="course-page-img"><img src="./img/course-img04.jpg" alt=""></div>
@@ -251,13 +113,8 @@
         </div>
     </section>
 
-    <section class="foreword">
-        <hr>
-        <h2>課程熱烈預約中，一起加入健身參盒</h2>
-        <hr>
-    </section>
 
-    <section class="curriculum">
+    <!-- <section class="curriculum">
         <div class="curriculum-list flex">
             <div class="curriculum-name flex spaceing-g24">
                 <h2>健身參盒curriculum</h2>
@@ -348,7 +205,7 @@
             </table>
         </div>
 
-    </section>
+    </section> -->
 
     <footer>
         <div class="footer-info">

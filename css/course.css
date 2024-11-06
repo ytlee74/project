@@ -1,0 +1,168 @@
+.page-banner-course{
+    background-image: url(../img/course-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+
+hr{
+    width: 80%;
+    border: 1px solid #000;
+}
+
+.foreword > h2{
+    text-align: center;
+    line-height: 64px;
+    font-size: 36px;
+    font-family: 'Noto Serif TC';
+}
+
+
+/* 課程列表 */
+.course-main{
+    width: 100%;
+}
+
+.course-item-list{
+    max-width: 1024px;
+    margin: auto;
+    flex-direction: column;
+}
+
+.course-item{
+    margin-bottom: 20px;
+}
+
+
+.course-text{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-text > h2{
+    font-size: 36px;
+}
+
+.course-text > p{
+    line-height: 2;
+    text-align: justify;
+}
+
+.btn-course{
+    justify-content: flex-end;
+}
+
+.btn-course-reserve{
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    background-color: #0C00D4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.btn-course-reserve:hover{
+    width: 220px;
+    height: 50px;
+    color: #000;
+    background-color: #FFEB3C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 響應式: 主軸(1024) */
+@media screen and (max-width : 1024px) {
+    .course-item-list{
+        margin: 0px 20px;
+    }
+
+    .course-item{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        gap: 32px;
+    }
+
+    .course-item-re{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+/* 響應式: 主軸(768) */
+@media screen and (max-width : 768px) {
+    .course-text > h2{
+        text-align: center;
+    }
+    .btn-course{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+/* ---------以下為未完成課表---------- */
+.curriculum{
+    width: 100%;
+}
+.curriculum-list{
+    max-width: 1080px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.curriculum-name{
+    align-items: center;
+}
+
+.curriculum-name > h2{
+    font-size: 32px;
+}
+
+.curriculum-month-select{
+    color: #fff;
+    background-color: #0C00D4;
+    padding: 5px 20px;
+    
+}
+
+.curriculum-week-select{
+    align-items: center;
+}
+
+.curriculum-table{
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+table {
+    width: 100%;
+    letter-spacing: 1px;
+    border-spacing: 10px;
+    text-align: center;
+    
+}
+
+td,th {
+    padding: 30px 0px;
+    border: 1px solid #D9D9D9;
+}
+
+th {
+    background-color: rgb(235, 235, 235);
+}
+.week-list{
+    color:#000;
+    background-color: #D6D6D6;
+}
