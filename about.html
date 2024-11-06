@@ -32,15 +32,15 @@
         .about-main{
             max-width: 1080px;
             margin: auto;
-            margin-bottom: 56px;
+            margin-bottom: 48px;
         }
         .about-paragraph{
             width: 480px;
             text-align: justify;
         }
         .about-paragraph p{
-            font-size: 24px;
-            padding-bottom: 36px;
+            font-size: 20px;
+            margin-bottom: 20px;
         }
         .about-title{
             flex-direction: column;
@@ -49,42 +49,45 @@
         .about-title > h2{
             font-size: 48px;
         }
+        .about-title > p{
+            margin-top: 30px;
+        }
 
-        img{
-            max-width: 100%;
-            height: auto;
-        }
         .about-img {
-            width: 550px;
             margin: auto;
+            align-items: center;
         }
+
         .about-img-left{
             flex-direction: column;
+            align-self: stretch;
+            gap: 32px;
         }
+
+
         .about-item{
             display: flex;
-            width: 480px;
             flex-direction: column;
-            align-items: center;
             flex-shrink: 0;
+            margin-top: 30px;
         }
-        .about-item-1{
-            margin: auto;
-            justify-content: space-between;
-        }
+
         .about-item-text{
-            width: 240px;
             text-align: center;
+            flex: 1 1;
         }
-        .about-item-text > p{
+        .about-item-title{
             font-size: 24px;
+            color: #FFF;
+            background-color: #0C00D4;
         }
+
         .about-item-text .about-number{
             font-size: 56px;
         }
 
         /* 響應式: CTA區塊 */
-        @media screen and (max-width : 990px) {
+        @media screen and (max-width : 768px) {
             .about-main{
                 width: 100%;
                 flex-wrap: wrap;
@@ -96,9 +99,13 @@
                 width: 100%;
                 margin: 0 20px;
             }
-
+            .about-title > h2{
+                font-size: 36px;
+            }
+            .about-item-text .about-number{
+                font-size: 48px;
+            }
         }
-
 
     </style>
 </head>
@@ -141,53 +148,55 @@
     </div>
 
     <section class="about-content">
-        <div class="about-main flex">
+        <div class="about-main flex spaceing-g24">
             <div class="about-paragraph">
                 <div class="about-title flex">
                     <h2>關於【健康參盒】</h2>
                     <p>為每個人找到專屬陪練的教練：「堅信有溫暖的陪伴，才有更好、更健康的體態。」</p>
                 </div>
                 <div class="about-item flex spaceing-g36">
-                    <div class="about-item-1 flex">
+                    <div class="flex spaceing-g12">
                         <div class="about-item-text">
-                            <p>since</p>
+                            <p class="about-item-title">since</p>
                             <p class="about-number">2023</p>
                         </div>
                         <div class="about-item-text">
-                            <p>store</p>
+                            <p class="about-item-title">store</p>
                             <p class="about-number">2</p>
                         </div>
                     </div>
-                    <div class="about-item-1 flex">
+                    <div class="flex spaceing-g12">
                         <div class="about-item-text">
-                            <p>coach</p>
+                            <p class="about-item-title">coach</p>
                             <p class="about-number">20+</p>
                         </div>
                         <div class="about-item-text">
-                            <p>member</p>
+                            <p class="about-item-title">member</p>
                             <p class="about-number">100+</p>
                         </div>
                     </div>
                 </div>
              </div>               
-            <div class="about-img"><img src="./img/about01.png" alt=""></div>
+            <div class="about-img flex"><img src="./img/about01.png" alt=""></div>
         </div>
         
-        <div class="about-main flex">
+        <div class="about-main flex spaceing-g24">
             <div class="about-paragraph">
                 <p>【健康參盒】創立於 2023 年，由於在疫情期間苦無訓練場地，日復一日的透過居家健身的方式，也了解到各種正確的健身觀念，便萌生了專屬健身陪練的制度與健身空間的規劃</p>
                 <p>起初只是跟朋友們享受健身的樂趣，以及舒坦各種壓力的方式，卻也意外有許多志同道合的朋友紛紛加入，讓【健身參盒】的規模日漸茁壯，一舉在疫情後的這一年開設 2 地的健身空間，給想要踏入健身的朋友們</p>
             </div>
-            <div class="about-img flex">
+            <div class="about-img flex spaceing-g36">
                 <div class="about-img-left flex">
                     <img src="./img/about02.png" alt="">
                     <img src="./img/about03.png" alt="">
                 </div>
-                <div class="about-img-right">
+                <div class="about-img-right flex">
                     <img src="./img/about04.png" alt="">
                 </div>
             </div>
-    </div>
+        </div>
+
+        
     </section>
     
 
