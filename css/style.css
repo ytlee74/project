@@ -240,7 +240,7 @@ footer{
     color: #FFF;
 }
 
-/* 手機斷點 */
+/* 手機斷點: 漢堡選單 */
 @media screen and (max-width:768px) {
     .hamburger {
         display: flex;
@@ -282,7 +282,7 @@ footer{
 } */
 
 /* 響應式: 麵包屑*/
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 1024px) {
     .breadcrumb-container{
         margin: 0px 20px;
         display: flex;
