@@ -14,7 +14,6 @@
 
 .banner-images img {
     width: 100%;
-    border-radius: 5px;
 }
 
 .carousel-buttons {
@@ -41,7 +40,7 @@
 /* 主畫面區塊 */
 .main-area{
     width: 100%;
-    max-width: 1080px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -92,7 +91,6 @@ hr{
     top: 100px;
 }
 .list{
-    max-width: 1080px;
     align-items: center;
 }
 
@@ -106,7 +104,7 @@ hr{
 .bg-item-course .course-list {
     transform: skewY(3deg);
     width: 100%;
-    max-width: 1080px;
+    max-width: 1024px;
     top: 20px;
     position: relative;
     margin: auto;
@@ -184,7 +182,7 @@ hr{
 .bg-item-article .article-list {
     transform: skewY(-3deg);
     width: 100%;
-    max-width: 1080px;
+    max-width: 1024px;
     top: 20px;
     position: relative;
     margin: auto;
@@ -210,7 +208,7 @@ hr{
 
 /* 首頁圓形按鈕 */
 .more{
-    max-width: 1080px;
+    max-width: 1024px;
     margin: auto;
 }
 .more-left{
@@ -259,7 +257,7 @@ hr{
 
 .plan-card{
     width: 240px;
-    height: 415px;
+    height: 300px;
     border-radius: 10px;
     background-color: #FFF;
     border: 5px solid #FFEB3C;
@@ -271,7 +269,7 @@ hr{
 
 .plan-list{
     width: 100%;
-    max-width: 1080px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -360,7 +358,7 @@ hr{
     .bg-item-course .course-list {
         transform: skewY(3deg);
         width: 100%;
-        max-width: 1080px;
+        max-width: 1024px;
         top: 20px;
         position: relative;
         margin: auto;
@@ -386,7 +384,7 @@ hr{
     .bg-item-course .course-list {
         transform: skewY(3deg);
         width: 100%;
-        max-width: 1080px;
+        max-width: 1024px;
         top: 20px;
         position: relative;
         margin: auto;
@@ -395,7 +393,7 @@ hr{
 }
 
 /* 響應式: 標題區塊 */
-@media screen and (max-width : 990px) {
+@media screen and (max-width : 1024px) {
     .main-title{
         flex-direction: column;
     }
@@ -426,7 +424,7 @@ hr{
     .bg-item-article .article-list {
         transform: skewY(-3deg);
         width: 100%;
-        max-width: 1080px;
+        max-width: 1024px;
         top: 20px;
         position: relative;
         margin: auto;
@@ -437,7 +435,7 @@ hr{
 /* 響應式: more按鈕區塊 */
 @media screen and (max-width : 990px) {
     .more{
-        max-width: 1080px;
+        max-width: 1024px;
         margin: auto;
     }
     .more-left{
@@ -452,7 +450,7 @@ hr{
 }
 
 /* 響應式: CTA區塊 */
-@media screen and (max-width : 990px) {
+@media screen and (max-width : 768px) {
     .cta{
         height: 320px;
     }

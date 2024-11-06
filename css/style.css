@@ -88,7 +88,8 @@ header{
 
 .menu{
     width: 100%;
-    max-width: 1080px;
+    height: 80px;
+    max-width: 1024px;
     align-items: center;
     margin: auto;
     padding: 0 30px;
@@ -165,6 +166,7 @@ nav ul li a:hover{
     color:#FFF;
 }
 
+
 /* breadcrumb麵包屑區塊 */
 .breadcrumbList{
     width: 100%;
@@ -183,7 +185,7 @@ nav ul li a:hover{
 }
 
 /* gotop按鈕 */
-.goTopBtn {
+/* .goTopBtn {
     display: none; 
     position: fixed;
     bottom: 30px;
@@ -202,7 +204,7 @@ nav ul li a:hover{
   .goTopBtn:hover {
     background-color: #FFEB3C;
     color: #000;
-  }
+  } */
   
 
 
