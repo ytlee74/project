@@ -223,12 +223,12 @@ footer{
     align-self: stretch;
 }
 .footer-info{
-    max-width: 1080px;
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 20px 0px;
+    padding: 20px 80px;
     color:#FFF;
 }
 .store-1{
@@ -239,6 +239,8 @@ footer{
     text-align: center;
     color: #FFF;
 }
+
+
 
 /* 手機斷點: 漢堡選單 */
 @media screen and (max-width:768px) {
