@@ -13,7 +13,7 @@
     margin-bottom: 48px;
 }
 .about-paragraph{
-    width: 480px;
+    width: 400px;
     text-align: justify;
 }
 .about-paragraph p{
@@ -65,9 +65,16 @@
 }
 
 /* 響應式: 主文圖片區塊 */
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 1024px) {
     .about-main{
         width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/* 響應式: 主文圖片區塊 */
+@media screen and (max-width : 768px) {
+    .about-main{
         flex-wrap: wrap;
     }
     .about-item{
@@ -75,12 +82,18 @@
     }
     .about-paragraph{
         width: 100%;
-        margin: 0 20px;
     }
     .about-title > h2{
         font-size: 36px;
     }
     .about-item-text .about-number{
         font-size: 48px;
+    }
+}
+
+/* 響應式: 主文圖片區塊 */
+@media screen and (max-width : 425px) {
+    .about-img{
+        flex-direction: column;
     }
 }
