@@ -2,7 +2,7 @@
     background-image: url(../img/location-banner.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 .location-info{
     max-width: 1080px;
