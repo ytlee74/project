@@ -1,0 +1,99 @@
+.page-banner-reserve{
+    background-image: url(../img/reserve-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.form-container{
+    width: 100%;
+}
+
+.form-area{
+    max-width: 1080px;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form-sop{
+    width: 150px;
+}
+.sop-step{
+    flex-direction: column;
+    align-items: center;
+}
+.sop-step-text{
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.form-title{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+.mark-red{
+    color:#d30000;
+}
+.mark-big{
+    font-size: 48px;
+}
+
+.form-content{
+    flex-direction: column;
+}
+
+.form-text{
+    flex-direction: column;
+}
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #B0B0B0;
+}
+input::placeholder{
+    padding-left: 5px;
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-send{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn-send-default{
+    background-color: #0C00D4;
+    color:#FFF;
+}
+.btn-send-default:hover{
+    background-color: #FFEB3C;
+    color:#000;
+}
+
+/* 響應式: 標題區塊 */
+@media screen and (max-width : 990px) {
+    .form{
+        margin: 0px 20px;
+    }
+
+}
+@media screen and (max-width : 450px) {
+    .form-content{
+        gap: 24px;
+    }
+    h2.form-title{
+        font-size: 24px;
+    }
+    .mark-big{
+        font-size: 28px;
+    }
+}
+
+

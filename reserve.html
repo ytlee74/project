@@ -7,6 +7,11 @@
     <title>預約體驗</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reserve.css">
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/top.scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- 引入 font-awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
@@ -18,93 +23,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <style>
-        .page-banner-reserve{
-            background-image: url(./img/banner-img01.png);
-            background-size: cover;
-            background-position: center;
-            opacity: 0.8;
-        }
-
-        .form-container{
-            width: 100%;
-        }
-
-        .form-area{
-            max-width: 1080px;
-            margin: auto;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .form-sop{
-            width: 150px;
-        }
-        .sop-step{
-            flex-direction: column;
-            align-items: center;
-        }
-        .sop-step-text{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h2.form-title{
-            margin-bottom: 50px;
-        }
-
-        .form-content{
-            flex-direction: column;
-            gap: 48px;
-        }
-
-        .form-text{
-            flex-direction: column;
-        }
-
-        input{
-            height: 50px;
-            border-radius: 10px;
-            border: 1px solid #B0B0B0;
-        }
-
-        .send{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .btn-send{
-            width: 200px;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-            border-radius: 20px;
-        }
-        .btn-send-default{
-            background-color: #0C00D4;
-            color:#FFF;
-        }
-        .btn-send-default:hover{
-            background-color: #FFEB3C;
-            color:#000;
-        }
-
-        /* 響應式: 標題區塊 */
-        @media screen and (max-width : 990px) {
-            .form{
-                margin: 0px 20px;
-            }
-
-        }
-        @media screen and (max-width : 450px) {
-            .form-content{
-                gap: 12px;
-            }
-        }
-
-
-
-    </style>
 </head>
 <body>
     <header>
@@ -166,8 +84,8 @@
             </div>
 
             <div class="form">
-                <h2 class="form-title">｜立即填表｜免費贈1對1教練課程乙堂</h2>
-                <div class="form-content flex">
+                <h2 class="form-title"><i class="fa fa-pencil-square-o"></i> 立即填表｜<br><span class="mark-big">免費贈</span> <span class="mark-red">1 對 1 教練課程乙堂</span></h2>
+                <div class="form-content flex spaceing-g48">
                     <div class="form-text flex spaceing-g8">
                         <label for="name">姓名 *</label>
                         <input type="text" id="name" placeholder="請輸入姓名" />
