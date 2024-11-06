@@ -142,6 +142,14 @@
             <p>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品，僅供學習、展示之用途。</p>
         </div>
     </footer>
-    
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navlist = document.querySelector(".navlist");
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navlist.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
