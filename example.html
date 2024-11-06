@@ -1,47 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>圖片動畫</title>
-    <style>
-    * {
-        box-sizing: border-box;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課表</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f7f7f7;
     }
-        .pic {
-            width: 400px;
-            height: 600px;
-            position: relative;
-            overflow: hidden;
-        }
-        .pic .desc {
-            position: absolute;
-            bottom: -50px;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-         .pic .desc {
-            transition: bottom 0.5s;
-        }
-        .pic:hover .desc {
-            bottom: 0;
-        }
-    </style>
+
+    h1 {
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .weekdays {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .day-btn {
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .day-btn.active {
+      background-color: #0056b3;
+    }
+
+    .schedule {
+      margin-top: 20px;
+      width: 80%;
+      max-width: 600px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="pic">
-        <img src="https://picsum.photos/400/600" alt="圖片">
-        <div class="desc">圖片的說明與標題</div>
-    </div>
-</body>
 
+  <h1>課表</h1>
+
+  <div class="weekdays">
+    <button class="day-btn active" onclick="showSchedule('monday')">週一</button>
+    <button class="day-btn" onclick="showSchedule('tuesday')">週二</button>
+    <button class="day-btn" onclick="showSchedule('wednesday')">週三</button>
+    <button class="day-btn" onclick="showSchedule('thursday')">週四</button>
+    <button class="day-btn" onclick="showSchedule('friday')">週五</button>
+  </div>
+
+  <div class="schedule">
+    <table>
+      <thead>
+        <tr>
+          <th>時間</th>
+          <th>科目</th>
+          <th>地點</th>
+        </tr>
+      </thead>
+      <tbody id="monday" class="schedule-content">
+        <tr><td>8:00 - 9:00</td><td>數學</td><td>教室101</td></tr>
+        <tr><td>9:00 - 10:00</td><td>英文</td><td>教室102</td></tr>
+      </tbody>
+      <tbody id="tuesday" class="schedule-content hidden">
+        <tr><td>8:00 - 9:00</td><td>科學</td><td>教室201</td></tr>
+        <tr><td>9:00 - 10:00</td><td>歷史</td><td>教室202</td></tr>
+      </tbody>
+      <tbody id="wednesday" class="schedule-content hidden">
+        <tr><td>8:00 - 9:00</td><td>地理</td><td>教室301</td></tr>
+        <tr><td>9:00 - 10:00</td><td>體育</td><td>體育館</td></tr>
+      </tbody>
+      <tbody id="thursday" class="schedule-content hidden">
+        <tr><td>8:00 - 9:00</td><td>美術</td><td>教室401</td></tr>
+        <tr><td>9:00 - 10:00</td><td>音樂</td><td>教室402</td></tr>
+      </tbody>
+      <tbody id="friday" class="schedule-content hidden">
+        <tr><td>8:00 - 9:00</td><td>物理</td><td>教室501</td></tr>
+        <tr><td>9:00 - 10:00</td><td>化學</td><td>教室502</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function showSchedule(day) {
+      // 隱藏所有天數的課表
+      document.querySelectorAll('.schedule-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+
+      // 顯示所選的課表
+      document.getElementById(day).classList.remove('hidden');
+
+      // 更新按鈕樣式
+      document.querySelectorAll('.day-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
 </html>

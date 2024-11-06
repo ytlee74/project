@@ -1,0 +1,52 @@
+.page-banner-location{
+    background-image: url(../img/location-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+.location-info{
+    max-width: 1080px;
+    margin: auto;
+}
+
+.location-img{
+    flex-direction: column;
+}
+
+.location-img-bottom {
+    flex: 1 1 33%;
+}
+
+.location-main{
+    width: 500px;
+}
+
+.location-name{
+    margin-bottom: 30px;
+    justify-content: flex-start;
+}
+.location-name > p{
+    color: #FFF;
+    background-color: #0C00D4;
+    padding: 5px 20px;
+}
+.location-text{
+    flex-direction: column;
+}
+
+
+/* 響應式: 場館資訊*/
+@media screen and (max-width : 1024px) {
+    .location-info{
+        margin: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+/* 響應式: 場館資訊*/
+/* @media screen and (max-width : 768px) {
+    .location-info{
+
+    }
+} */

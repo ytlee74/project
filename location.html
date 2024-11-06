@@ -6,7 +6,12 @@
     <meta name="description" content="健身房首選Be Strong">
     <title>場館據點</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/location.css">
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/top.scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <!-- 引入 font-awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
@@ -17,48 +22,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <style>
-        .page-banner-location{
-            background-image: url(./img/location-banner.jpg);
-            background-size: cover;
-            background-position: center;
-            opacity: 0.8;
-        }
-        .location-info{
-            width: 1080px;
-            margin: auto;
-        }
-        .location-img{
-            width: 520px;
-            flex-direction: column;
-        }
-        .location-img-top{
-            width: 520px;
-            height: 360px;
-            background-color: #c8c8c8;
-        }
-        .location-img-bottom {
-            flex: 1 1 33%;
-        }
-        .location-img-item{
-            width: 160px;
-            height: 160px;
-            background-color: #c8c8c8;
-        }
-
-
-        .location-name{
-            justify-content: flex-start;
-        }
-        .location-name > p{
-            background-color: #0C00D4;
-            padding: 5px 20px;
-        }
-        .location-text{
-            flex-direction: column;
-        }
-
-    </style>
 
 </head>
 <body>
@@ -100,28 +63,40 @@
     </div>
 
     <section>
-        <div class="location-info flex">
-            <div class="location-img flex spaceing-g36">
-                <div class="location-img-top">圖片</div>
-                <div class="location-img-bottom flex">
-                    <div class="location-img-item">圖片</div>
-                    <div class="location-img-item">圖片</div>
-                    <div class="location-img-item">圖片</div>
+        <div class="location-info flex spaceing-g36">
+            <div class="location-img flex spaceing-g12">
+                <div class="location-img-top"><img src="./img/location-img1-01.jpg" alt=""></div>
+                <div class="location-img-bottom flex spaceing-g8">
+                    <div class="location-img-item"><img src="./img/location-img1-02.jpg" alt=""></div>
+                    <div class="location-img-item"><img src="./img/location-img1-03.jpg" alt=""></div>
+                    <div class="location-img-item"><img src="./img/location-img1-04.jpg" alt=""></div>
                 </div>
             </div>
             <div class="location-main">
                 <div class="location-store">
-                    <div class="location-name flex spaceing-g36">
-                        <p>AAA店</p>
-                        <p>BBB店</p>
+                    <div class="location-name flex spaceing-g24">
+                        <p>忠孝店</p>
+                        <p>內湖店</p>
                     </div>
-                    <div class="location-text flex spaceing-g36">
-                        <p>電話：電話電話電話電話電話電話</p>
-                        <p>地址：地址地址地址地址地址地址地址地址地址</p>
-                        <p>營業時間：平日AM09:00-PM22:00 假日 AM09:00-PM21:00</p>
-                        <p>交通資訊：<br>
-                            公車<br>
-                            捷運</p>
+                    <div class="location-text flex spaceing-g24">
+                        <div class="info-list">
+                            <i class="fa fa-phone fa-lg"></i> 電話
+                            <p class="info-list-item">(02)2233-5566</p>
+                        </div>
+                        <div class="info-list">
+                            <i class="fa fa-map-marker fa-lg"></i> 地址
+                            <p class="info-list-item">台北市大安區忠孝東路四段0號</p>
+                        </div>
+                        <div class="info-list">
+                            <i class="fa fa-clock-o fa-lg"></i> 營業時間
+                            <p class="info-list-item">平日 AM09:00-PM22:00<br>假日 AM09:00-PM21:00</p>
+                        </div>
+                        <div class="info-list">
+                            <i class="fa fa-subway fa-lg"></i> 交通資訊
+                            <p class="info-list-item">公車｜捷運忠孝復興站(忠孝東路)｜204、212、212(直)、212(夜)、232(快)、232(副)、262、262(區)、299、600、605、605(新台)、919、1815、1815(區)、5201、5203、5500、台北觀光巴士紅線</p>
+                            <p class="info-list-item">捷運｜搭乘捷運BR文湖線於BR10忠孝復興站/BL板南線於BL15忠孝復興站4號出口出站，即可到達</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
