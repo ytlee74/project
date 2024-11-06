@@ -44,19 +44,20 @@ h1.article-title{
 /* 延伸閱讀 */
 .read-more{
     max-width: 840px;
-    margin: 100px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+
 }
 .previous{
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;
     align-self: stretch;
+    flex: 1;
 }
 .next{
     flex-direction: column;
     align-items: flex-end;
-    flex-shrink: 0;
     align-self: stretch;
+    flex: 1;
 }
 
 .btn-further{
@@ -91,6 +92,7 @@ h1.article-title{
     justify-content: center;
     align-items: center;
 } */
+
 
 /* 側邊欄 */
 .aside {
@@ -133,8 +135,8 @@ color: #aaa;
 
 
 
-/* 響應式: 延伸閱讀*/
-@media screen and (max-width : 768px) {
+/* 響應式: 文章內容*/
+@media screen and (max-width : 1024px) {
     .new-content{
         margin: 0px 20px;
     }
@@ -147,13 +149,16 @@ color: #aaa;
     }
     .previous{
         flex-shrink: 1;
+        justify-content: flex-start;
     }
     .next{
         flex-shrink: 1;
+        
+        justify-content: flex-start;
     }
 }
 
-/* 響應式: 麵包屑*/
+/* 響應式: 側邊欄*/
 @media screen and (max-width : 768px) {
     .aside {
         display: none;
