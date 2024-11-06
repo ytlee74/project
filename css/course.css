@@ -25,7 +25,7 @@ hr{
 }
 
 .course-item-list{
-    max-width: 1024px;
+    max-width: 1080px;
     margin: auto;
     flex-direction: column;
 }
